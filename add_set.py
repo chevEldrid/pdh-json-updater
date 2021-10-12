@@ -85,8 +85,6 @@ if os.path.exists(RESULT_FILE):
         data = json.load(card_file)
         for card in data:
             existing_json[card["name"]] = card
-else:
-    os.mknod(RESULT_FILE)
 
 # fetches requested set as an array of card objects
 mtg_set = fetch_set(set_code)
