@@ -108,4 +108,4 @@ format_list = list(format_json.values()) + list(existing_json.values())
 format_list.sort(key=lambda x: x['name'], reverse=False)
 
 with open(RESULT_FILE, 'w') as output_file:
-    json.dump(format_list, output_file)
+    json.dump(obj=format_list, fp=output_file, indent=2, separators=(",", ": "))
