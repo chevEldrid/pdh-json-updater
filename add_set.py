@@ -7,8 +7,6 @@ import time
 set_code = ""
 # json object storing final dump
 format_json = {}
-# existing json rulings loaded in from RESULT_FILE
-existing_json = {}
 
 RESULT_FILE = "pauper-commander.json"
 # search for cards of rarity less than r and set of...
@@ -79,6 +77,27 @@ def fetch_set(set_code):
     return total_set
 
 
+def fetch_set_json(set_code, existing_commander_json):
+    set_json = {}
+    # fetches requested set as an array of card objects
+    mtg_set = fetch_set(set_code)
+    # transforms each card in mtg_set and adds them to a "format_additions" to be merged with master list
+    for card in mtg_set[0]:
+        json_card = JsonCard(card)
+        card_name = json_card.name
+
+        if json_card.legality == LEGAL or json_card.legality == LEGAL_AS_COMMANDER:
+            # if this is first printing, add to list. If this is a reprint, requires a little extra checking
+            # if card["reprint"]: <- much cleaner, but only works if sets added chronologically since first printing, reprint = false
+            if card_name in existing_commander_json:
+                prev_card_ruling = existing_commander_json[card_name]
+                if prev_card_ruling.legality == LEGAL_AS_COMMANDER and json_card.legality == LEGAL:
+                    prev_card_ruling.legality = LEGAL
+            else:
+                set_json[card_name] = json_card
+    return set_json
+
+
 # ------------------------
 try:
     set_code = sys.argv[1]
@@ -87,28 +106,14 @@ except:
     sys.exit()
 
 # fetches existing list of cards
+existing_json = {}
 if os.path.exists(RESULT_FILE):
     with open(RESULT_FILE) as card_file:
         data = jsonpickle.decode(card_file.read())
         for card in data:
             existing_json[card.name] = card
 
-# fetches requested set as an array of card objects
-mtg_set = fetch_set(set_code)
-# transforms each card in mtg_set and adds them to a "format_additions" to be merged with master list
-for card in mtg_set[0]:
-    json_card = JsonCard(card)
-    card_name = json_card.name
-
-    if json_card.legality == LEGAL or json_card.legality == LEGAL_AS_COMMANDER:
-        # if this is first printing, add to list. If this is a reprint, requires a little extra checking
-        # if card["reprint"]: <- much cleaner, but only works if sets added chronologically since first printing, reprint = false
-        if card_name in existing_json:
-            prev_card_ruling = existing_json[card_name]
-            if prev_card_ruling.legality == LEGAL_AS_COMMANDER and json_card.legality == LEGAL:
-                prev_card_ruling.legality = LEGAL
-        else:
-            format_json[card_name] = json_card
+format_json = fetch_set_json(set_code, existing_json)
 
 format_list = list(format_json.values()) + list(existing_json.values())
 
