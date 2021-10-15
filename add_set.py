@@ -18,7 +18,7 @@ PDH_BANLIST = ["Rhystic Study", "Mystic Remora"]
 CULTURAL_BANLIST = ["Stone-Throwing Devils", "Pradesh Gypsies"]
 # Cards "banned" due to incorrect rarities, ante, or any other reason
 SOFT_BANLIST = ["Spatial Contortion", "Circle of Flame"]
-ILLEGAL_CARD_TYPES = ["Conspiracy", "Vanguard", "Scheme"]
+ILLEGAL_CARD_TYPES = ["Conspiracy"]
 
 LEGAL = "Legal"
 LEGAL_AS_COMMANDER = "Legal As Commander"
@@ -67,7 +67,7 @@ def fetch_set(set_code):
         has_more = False
         r = requests.get(url)
         x = jsonpickle.loads(r.text)
-        total_set.append(x["data"])
+        total_set.extend(x["data"])
 
         if x["has_more"]:
             url = x["next_page"]
@@ -82,7 +82,7 @@ def fetch_set_json(set_code, existing_commander_json):
     # fetches requested set as an array of card objects
     mtg_set = fetch_set(set_code)
     # transforms each card in mtg_set and adds them to a "format_additions" to be merged with master list
-    for card in mtg_set[0]:
+    for card in mtg_set:
         json_card = JsonCard(card)
         card_name = json_card.name
 
