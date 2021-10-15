@@ -16,9 +16,11 @@ CULTURAL_BANLIST = ["Stone-Throwing Devils", "Pradesh Gypsies"]
 SOFT_BANLIST = ["Spatial Contortion", "Circle of Flame"]
 ILLEGAL_CARD_TYPES = ["Conspiracy"]
 
+BANNED = "Banned"
 LEGAL = "Legal"
 LEGAL_AS_COMMANDER = "Legal As Commander"
 NOT_LEGAL = "Not Legal"
+LEGALITIES = [BANNED, LEGAL, LEGAL_AS_COMMANDER, NOT_LEGAL]
 # transforms a scryfall card object into a json card object
 
 
@@ -33,9 +35,12 @@ class JsonCard:
 def is_legal(scryfall_queried_card):
     front_card_face_typeline = scryfall_queried_card["type_line"].split(
         "//")[0]
-    joint_banlist = PDH_BANLIST + CULTURAL_BANLIST + SOFT_BANLIST
+    joint_banlist = PDH_BANLIST + CULTURAL_BANLIST
     # check for bannings
     if scryfall_queried_card["name"] in joint_banlist:
+        return BANNED
+    #fixes rarity issues by allowing certain cards to be rendered "not legal"
+    if scryfall_queried_card["name"] in SOFT_BANLIST:
         return NOT_LEGAL
     # check illegal card types
     if front_card_face_typeline in ILLEGAL_CARD_TYPES:
@@ -83,7 +88,7 @@ def fetch_set_json(set_code, existing_commander_json):
         json_card = JsonCard(card)
         card_name = json_card.name
 
-        if json_card.legality == LEGAL or json_card.legality == LEGAL_AS_COMMANDER:
+        if json_card.legality != NOT_LEGAL:
             # if this is first printing, add to list. If this is a reprint, requires a little extra checking
             # if card["reprint"]: <- much cleaner, but only works if sets added chronologically since first printing, reprint = false
             if card_name in existing_commander_json:
