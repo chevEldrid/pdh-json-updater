@@ -4,10 +4,6 @@ import requests
 import jsonpickle
 import time
 
-set_code = ""
-# json object storing final dump
-format_json = {}
-
 RESULT_FILE = "pauper-commander.json"
 # search for cards of rarity less than r and set of...
 SCRYFALL_SET_SEARCH_URL = "https://api.scryfall.com/cards/search?q=r%3Cr+set%3A{0}{1}"
@@ -99,27 +95,32 @@ def fetch_set_json(set_code, existing_commander_json):
 
 
 # ------------------------
-try:
-    set_code = sys.argv[1]
-except:
-    print("ERROR: Set code must be provided")
-    sys.exit()
+def main():
+    try:
+        set_code = sys.argv[1]
+    except:
+        print("ERROR: Set code must be provided")
+        sys.exit()
 
-# fetches existing list of cards
-existing_json = {}
-if os.path.exists(RESULT_FILE):
-    with open(RESULT_FILE) as card_file:
-        data = jsonpickle.decode(card_file.read())
-        for card in data:
-            existing_json[card.name] = card
+    # fetches existing list of cards
+    existing_json = {}
+    if os.path.exists(RESULT_FILE):
+        with open(RESULT_FILE) as card_file:
+            data = jsonpickle.decode(card_file.read())
+            for card in data:
+                existing_json[card.name] = card
 
-format_json = fetch_set_json(set_code, existing_json)
+    # json object storing final dump
+    format_json = fetch_set_json(set_code, existing_json)
 
-format_list = list(format_json.values()) + list(existing_json.values())
+    format_list = list(format_json.values()) + list(existing_json.values())
 
-format_list.sort(key=lambda x: x.name, reverse=False)
+    format_list.sort(key=lambda x: x.name, reverse=False)
 
-with open(RESULT_FILE, 'w') as output_file:
-    full_json_text = jsonpickle.encode(
-        value=format_list, indent=2, separators=(",", ": "))
-    output_file.write(full_json_text)
+    with open(RESULT_FILE, 'w') as output_file:
+        full_json_text = jsonpickle.encode(
+            value=format_list, indent=2, separators=(",", ": "))
+        output_file.write(full_json_text)
+
+
+main()
