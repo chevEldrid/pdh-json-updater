@@ -55,20 +55,21 @@ def is_legal(scryfall_queried_card):
 
 def fetch_set(set_code):
     total_set = []
-    has_more = False
     url = SCRYFALL_SET_SEARCH_URL.format(
         set_code, CARDTYPE_SEARCH_MODIFIER)
-
-    while not has_more:
-        has_more = False
-        r = requests.get(url)
-        x = jsonpickle.loads(r.text)
-        total_set.extend(x["data"])
-
-        if x["has_more"]:
-            url = x["next_page"]
-            has_more = True
-            time.sleep(.15)
+    print("attempting to fetch set")
+    try:
+        while True:
+            r = requests.get(url)
+            x = jsonpickle.loads(r.text)
+            total_set.extend(x["data"])
+            if x["has_more"]:
+                url = x["next_page"]
+                time.sleep(.15)
+            else:
+                break
+    except:
+        print("Error attempting to grab set "+set_code+", skipping.")
 
     return total_set
 
@@ -123,4 +124,5 @@ def main():
         output_file.write(full_json_text)
 
 
-main()
+if __name__ == "__main__":
+    main()

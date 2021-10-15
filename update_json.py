@@ -5,6 +5,9 @@ import time
 from datetime import datetime
 from typing import List, Dict, Optional
 
+from add_set import JsonCard, fetch_set_json
+
+RESULT_FILE = "pauper-commander.json"
 UPDATE_METADATA_FILE = "last_update_metadata.json"
 SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
 ILLEGAL_SET_TYPES = ["token", "memorabilia", "funny"]
@@ -59,10 +62,20 @@ def fetch_setcodes_as_recent_as(date: datetime) -> SetcodeFetchResult:
 # ---------------------------------------------------------
 def main():
     last_set_release_date: datetime
+    existing_cards: Dict[str, JsonCard] = {}
+    card_list: List[JsonCard] = []
+
     if os.path.exists(UPDATE_METADATA_FILE):
         with open(UPDATE_METADATA_FILE) as update_metadata_file:
             data: Dict[str, str] = jsonpickle.decode(update_metadata_file.read())
             last_set_release_date = datetime.strptime(data["last_set_release_date"], DATE_FORMAT)
+
+    if os.path.exists(RESULT_FILE):
+        with open(RESULT_FILE) as card_file:
+            data = jsonpickle.decode(card_file.read())
+            for card in data:
+                existing_cards[card.name] = card
+        card_list.append(list(existing_cards.values()))
 
     print("previous date found, commencing fetch of set codes")
     setcode_fetch_result = fetch_setcodes_as_recent_as(last_set_release_date)
@@ -70,8 +83,20 @@ def main():
     last_set_release_date = setcode_fetch_result.last_set_release_date
 
     print(codes_to_update)
-    # insert logic calling add_set or whatever we decide
-    # update stored date with current time
+    # for each code found required to update the commander json, iterates through to add the set to the existing cards
+    for code in codes_to_update:
+        new_cards: Dict[str, JsonCard]
+        new_cards = fetch_set_json(code, existing_cards)
+        existing_cards = {**existing_cards, **new_cards}
+        card_list = card_list + list(new_cards.values())
+
+    card_list.sort(key=lambda x: x.name, reverse=False)
+
+    with open(RESULT_FILE, 'w') as output_file:
+        full_json_text = jsonpickle.encode(
+            value=card_list, indent=2, separators=(",", ": "))
+        output_file.write(full_json_text)
+
     update_metadata = {"last_set_release_date": last_set_release_date.strftime(DATE_FORMAT)}
 
     with open(UPDATE_METADATA_FILE, 'w') as output_file:
