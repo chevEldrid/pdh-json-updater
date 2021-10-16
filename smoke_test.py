@@ -1,41 +1,107 @@
-import os
-import jsonpickle
-from typing import Dict
+from typing import Dict, List
 
 from file_handler import FileHandler
 from legality import Legality
 from json_card import JsonCard
 
-UNIT_TEST_FILE = "test_suite.json"
-
-
 class TestCard:
-    def __init__(self, test_card):
-        self.name = test_card["name"]
-        self.legality = test_card["legality"]
+    def __init__(self, name, legality):
+        self.name: str = name
+        self.legality: str = legality
+
+
+TEST_CARDS: List[TestCard] = [
+    TestCard(  # Common
+        name="+2 Mace",
+        legality=Legality.LEGAL),
+    TestCard(  # Uncommon creature
+        name="Battle Cry Goblin",
+        legality=Legality.LEGAL_AS_COMMANDER),
+    TestCard(  # Rare
+        name="Ranger Class",
+        legality=Legality.NOT_LEGAL),
+
+    TestCard(  # Banned
+        name="Rhystic Study",
+        legality=Legality.BANNED),
+    TestCard(  # Banned
+        name="Mystic Remora",
+        legality=Legality.BANNED),
+    TestCard(  # Banned because ante
+        name="Tempest Efreet",
+        legality=Legality.BANNED),
+    TestCard(  # Land
+        name="Dryad Arbor",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Counter-balance to Dryad Arbor to make sure we aren't too restrictive
+        name="Akoum Warrior",
+        legality=Legality.LEGAL_AS_COMMANDER),
+    TestCard(  # Isn't a creature on front face
+        name="Autumnal Gloom",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Counter-balance to Autumnal Gloom to make sure we aren't too restrictive
+        name="Soul Seizer",
+        legality=Legality.LEGAL_AS_COMMANDER),
+    TestCard(  # Digital-only
+        name="Shrine Keeper",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Only physical printing is over-sized
+        name="Aswan Jaguar",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Used to be legal as MTGO Promo
+        name="Spatial Contortion",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Used to be legal as MTGO Promo
+        name="Circle of Flame",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Used to be legal as MTGO Promo
+        name="Hada Freeblade",
+        legality=Legality.LEGAL_AS_COMMANDER),
+    TestCard(  # Plane
+        name="Akoum",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Scheme
+        name="Know Evil",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Conspiracy
+        name="Adriana's Valor",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Contraption
+        name="Boomflinger",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Silver-bordered
+        name="AWOL",
+        legality=Legality.NOT_LEGAL),
+    TestCard(  # Legal despite being banned in Vintage
+        name="Brainstorm",
+        legality=Legality.LEGAL),
+    TestCard(  # Uncommon -> Common -> Rare)
+        name="Fire // Ice",
+        legality=Legality.LEGAL),
+    TestCard(  # Legal in 99 despite being a commander
+        name="Slippery Bogle",
+        legality=Legality.LEGAL),
+    TestCard(  # Legal only because of an MTGA printing
+        name="Waterkin Shaman",
+        legality=Legality.LEGAL),
+    TestCard(  # Legal only because of an MTGO printing
+        name="Chainer's Edict",
+        legality=Legality.LEGAL)
+]
 
 
 def main():
     existing_commander_json: Dict[str, JsonCard] = FileHandler.get_existing_json()
-    cards_to_test: Dict[str, TestCard] = {}
-
-    if os.path.exists(UNIT_TEST_FILE):
-        with open(UNIT_TEST_FILE) as card_file:
-            data = jsonpickle.decode(card_file.read())
-            for card in data:
-                testCard = TestCard(card)
-                cards_to_test[testCard.name] = testCard
-
-    total_tests = len(cards_to_test)
+    total_tests = len(TEST_CARDS)
     total_tests_passed = 0
 
-    for card in cards_to_test.values():
+    for card in TEST_CARDS:
         if card.name in existing_commander_json:
-            if card.legality == existing_commander_json[card].legality:
+            if card.legality == existing_commander_json[card.name].legality:
                 total_tests_passed = total_tests_passed + 1
             else:
                 print("TEST FAILED: Expected "+card.name+" to be " +
-                      card.legality+", but it was "+existing_commander_json[card].legality)
+                      card.legality+", but it was "+existing_commander_json[card.name].legality)
         elif card.legality == Legality.NOT_LEGAL:
             total_tests_passed = total_tests_passed + 1
         else:
