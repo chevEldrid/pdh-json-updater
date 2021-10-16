@@ -34,13 +34,13 @@ TEST_CARDS: List[TestCard] = [
         name="Dryad Arbor",
         legality=Legality.NOT_LEGAL),
     TestCard(  # Counter-balance to Dryad Arbor to make sure we aren't too restrictive
-        name="Akoum Warrior",
+        name="Akoum Warrior // Akoum Teeth",
         legality=Legality.LEGAL_AS_COMMANDER),
     TestCard(  # Isn't a creature on front face
-        name="Autumnal Gloom",
+        name="Autumnal Gloom // Ancient of the Equinox",
         legality=Legality.NOT_LEGAL),
     TestCard(  # Counter-balance to Autumnal Gloom to make sure we aren't too restrictive
-        name="Soul Seizer",
+        name="Soul Seizer // Ghastly Haunting",
         legality=Legality.LEGAL_AS_COMMANDER),
     TestCard(  # Digital-only
         name="Shrine Keeper",
