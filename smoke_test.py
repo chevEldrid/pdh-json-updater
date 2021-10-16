@@ -20,7 +20,6 @@ TEST_CARDS: List[TestCard] = [
     TestCard(  # Rare
         name="Ranger Class",
         legality=Legality.NOT_LEGAL),
-
     TestCard(  # Banned
         name="Rhystic Study",
         legality=Legality.BANNED),

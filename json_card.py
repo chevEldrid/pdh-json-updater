@@ -1,9 +1,11 @@
 from legality import Legality
 
 # transforms a scryfall card object into a json card object
+
+
 class JsonCard:
-    PDH_BANLIST = ["Rhystic Study", "Mystic Remora"]
-    CULTURAL_BANLIST = ["Stone-Throwing Devils", "Pradesh Gypsies"]
+    PDH_BANLIST = ["Rhystic Study", "Mystic Remora",
+                   "Stone-Throwing Devils", "Pradesh Gypsies", "Tempest Efreet"]
     # Cards "banned" as a workaround, e.g. due to incorrect rarities in Scryfall
     SOFT_BANLIST = ["Spatial Contortion", "Circle of Flame"]
     ILLEGAL_CARD_TYPES = ["Conspiracy"]
@@ -16,10 +18,10 @@ class JsonCard:
     # determines legality of a card based on rarity (legal, legal as commander, not legal) and banlist
     @classmethod
     def is_legal(cls, scryfall_queried_card):
-        front_card_face_typeline = scryfall_queried_card["type_line"].split("//")[0]
-        joint_banlist = cls.PDH_BANLIST + cls.CULTURAL_BANLIST
+        front_card_face_typeline = scryfall_queried_card["type_line"].split(
+            "//")[0]
         # check for bannings
-        if scryfall_queried_card["name"] in joint_banlist:
+        if scryfall_queried_card["name"] in cls.PDH_BANLIST:
             return Legality.BANNED
         # fixes rarity issues by allowing certain cards to be rendered "not legal"
         if scryfall_queried_card["name"] in cls.SOFT_BANLIST:
