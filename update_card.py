@@ -1,23 +1,21 @@
-import os
 import sys
-import jsonpickle
-from typing import List, Dict
+from typing import Dict
 
-from add_set import LEGALITIES, JsonCard
+from file_handler import FileHandler
+from legality import Legality
+from json_card import JsonCard
 
-RESULT_FILE = "pauper-commander.json"
-
-def update_card(card_name, updated_legality, existing_commander_json):
-    if card_name in existing_commander_json:
-        prev_card_ruling = existing_commander_json[card_name]
-        if updated_legality in LEGALITIES:
+def update_card_in_json(card_name: str, updated_legality: str, existing_format_json: Dict[str, JsonCard]):
+    """Given a card name, its new legality, and a dict with legality info, updates the entry for that card in that dict."""
+    if card_name in existing_format_json:
+        prev_card_ruling = existing_format_json[card_name]
+        if updated_legality in Legality:
             prev_card_ruling.legality = updated_legality
             print("Card object updated!")
         else:
             print("ERROR: illegal rarity provided")
     else:
         print("ERROR: "+card_name+" not found in existing commander json")
-    return existing_commander_json
 
 
 def main():
@@ -26,23 +24,11 @@ def main():
         updated_legality = sys.argv[2]
     except:
         print("ERROR: Requires both a card name and legality")
+        return
 
-    existing_commander_json: Dict[str, JsonCard] = {}
-    card_list: List[JsonCard] = []
-
-    if os.path.exists(RESULT_FILE):
-        with open(RESULT_FILE) as card_file:
-            data = jsonpickle.decode(card_file.read())
-            for card in data:
-                existing_commander_json[card.name] = card
-        
-    existing_commander_json = update_card(card_name, updated_legality, existing_commander_json)
-    card_list = list(existing_commander_json.values())
-
-    with open(RESULT_FILE, 'w') as output_file:
-        full_json_text = jsonpickle.encode(
-            value=card_list, indent=2, separators=(",", ": "))
-        output_file.write(full_json_text)
+    format_json = FileHandler.get_existing_json()
+    update_card_in_json(card_name, updated_legality, format_json)
+    FileHandler.save_format_json_to_file(format_json)
 
 
 if __name__ == "__main__":
