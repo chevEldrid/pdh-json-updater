@@ -1,9 +1,7 @@
-import requests
-import jsonpickle
-import time
 from datetime import datetime
 from typing import List, Dict, Optional
 
+from scryfall_fetcher import ScryfallFetcher
 from file_handler import FileHandler
 from add_set import update_json_with_set
 
@@ -24,22 +22,12 @@ def fetch_setcodes_as_recent_as(date: Optional[datetime]) -> SetcodeFetchResult:
     * aren't of an illegal type (such as un-sets)
     In addition to that, the release date of the newest returned set is returned as well.
     If no sets are returned, returns the given date instead."""
-    print("hit fetch set codes")
-    total_sets: List[Dict[str, str]] = []
+    print("Starting to fetch missing sets...", end=' ')
     setcodes_to_load: List[str] = []
     today = datetime.now()
-    url = SCRYFALL_SETS_SEARCH_URL
-    while True:
-        r = requests.get(url)
-        x = jsonpickle.loads(r.text)
-        total_sets.extend(x["data"])
-        if x["has_more"]:
-            url = x["next_page"]
-            time.sleep(.15)
-        else:
-            break
 
-    print("sets found, loading")
+    scryfall_response = ScryfallFetcher.fetch_data(SCRYFALL_SETS_SEARCH_URL, raise_exceptions=True)
+    total_sets: List[Dict[str, str]] = scryfall_response.data
 
     # The first card_set is the most recent one.
     last_set_release_date: Optional[datetime] = None
@@ -59,6 +47,8 @@ def fetch_setcodes_as_recent_as(date: Optional[datetime]) -> SetcodeFetchResult:
     if last_set_release_date is None:
         last_set_release_date = date
 
+    print(f"Done.\n"
+          f"Fetched sets: {setcodes_to_load}")
     return SetcodeFetchResult(setcodes=setcodes_to_load, last_set_release_date=last_set_release_date)
 
 
@@ -67,12 +57,10 @@ def main():
     existing_json = FileHandler.get_existing_json()
     current_last_set_release_date = FileHandler.get_last_set_release_date()
 
-    print("previous date found, commencing fetch of set codes")
     setcode_fetch_result = fetch_setcodes_as_recent_as(current_last_set_release_date)
     codes_to_update = setcode_fetch_result.setcodes
     new_last_set_release_date = setcode_fetch_result.last_set_release_date
 
-    print(codes_to_update)
     # for each code found required to update the commander json, iterates through to add the set to the existing cards
     for code in codes_to_update:
         update_json_with_set(code, existing_json)

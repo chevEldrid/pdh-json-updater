@@ -117,15 +117,13 @@ def main():
             if card.legality == existing_commander_json[card.name].legality:
                 total_tests_passed = total_tests_passed + 1
             else:
-                print("TEST FAILED: Expected "+card.name+" to be " +
-                      card.legality+", but it was "+existing_commander_json[card.name].legality)
+                print(f"TEST FAILED: Expected {card.name} to be {card.legality}, but it was {existing_commander_json[card.name].legality}.")
         elif card.legality == Legality.NOT_LEGAL:
             total_tests_passed = total_tests_passed + 1
         else:
-            print("TEST FAILED: Expected "+card.name+" to be " +
-                  card.legality+", but it was "+Legality.NOT_LEGAL)
+            print(f"TEST FAILED: Expected {card.name} to be {card.legality}, but it was {Legality.NOT_LEGAL}.")
 
-    print("Total Score: "+str(total_tests_passed)+"/"+str(total_tests))
+    print(f"Total Score: {total_tests_passed}/{total_tests}")
 
 
 if __name__ == "__main__":

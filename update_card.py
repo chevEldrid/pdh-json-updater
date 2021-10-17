@@ -15,17 +15,18 @@ def update_card_in_json(card_name: str, updated_legality: str, existing_format_j
         else:
             print("ERROR: illegal rarity provided")
     else:
-        print("ERROR: "+card_name+" not found in existing commander json")
+        print(f"ERROR: {card_name} not found in existing commander json.")
 
 
 def main():
-    try:
-        card_name = sys.argv[1]
-        updated_legality = sys.argv[2]
-    except:
-        print("ERROR: Requires both a card name and legality")
+    if len(sys.argv) != 3:  # The script itself is the first argument.
+        print(f"ERROR: Incorrect arguments.\n"
+              f"Correct usage: {sys.argv[0]} <card_name> <legality>\n"
+              f"Example: {sys.argv[0]} \"Snapcaster Mage\" \"Not Legal\"")
         return
 
+    card_name = sys.argv[1]
+    updated_legality = sys.argv[2]
     format_json = FileHandler.get_existing_json()
     update_card_in_json(card_name, updated_legality, format_json)
     FileHandler.save_format_json_to_file(format_json)
