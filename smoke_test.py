@@ -91,10 +91,10 @@ TEST_CARDS: List[TestCard] = [
         legality=Legality.LEGAL),
     TestCard(  # Legal only because of an MTGO printing
         name="Chainer's Edict",
-        legality=Legality.LEGAL)
+        legality=Legality.LEGAL),
     TestCard(  # Legal only because of Renaissance
         name="Ball Lightning",
-        legality=Legality.LEGAL_AS_COMMANDER)
+        legality=Legality.LEGAL_AS_COMMANDER),
     TestCard(  # Legal only because of Renaissance
         name="Cursed Rack",
         legality=Legality.LEGAL)
