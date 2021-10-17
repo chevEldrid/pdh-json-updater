@@ -1,9 +1,7 @@
 import sys
-import requests
-import jsonpickle
-import time
-from typing import Dict
+from typing import Dict, List, Optional
 
+from scryfall_fetcher import ScryfallFetcher
 from file_handler import FileHandler
 from legality import Legality
 from json_card import JsonCard
@@ -14,28 +12,20 @@ SCRYFALL_SET_SEARCH_URL = "https://api.scryfall.com/cards/search?q=r%3Cr+set%3A{
 CARDTYPE_SEARCH_MODIFIER = "+in%3Apaper+(legal%3Avintage+OR+restricted%3Avintage+OR+banned%3Avintage)"
 
 # Fetches an entire set of cards from Scryfall given the search url, and returns them as an array
-def fetch_set(set_code):
-    total_set = []
-    url = SCRYFALL_SET_SEARCH_URL.format(
-        set_code, CARDTYPE_SEARCH_MODIFIER)
-    print("attempting to fetch set")
-    try:
-        while True:
-            r = requests.get(url)
-            x = jsonpickle.loads(r.text)
-            total_set.extend(x["data"])
-            if x["has_more"]:
-                url = x["next_page"]
-                time.sleep(.15)
-            else:
-                break
-    except:
-        print("Error attempting to grab set "+set_code+", skipping.")
+def fetch_set(set_code: str) -> List:
+    url = SCRYFALL_SET_SEARCH_URL.format(set_code, CARDTYPE_SEARCH_MODIFIER)
+    print(f"Attempting to fetch set {set_code}...", end=' ')
 
-    return total_set
+    scryfall_result = ScryfallFetcher.fetch_data(url, raise_exceptions=False)
+    if not scryfall_result.was_successful:
+        print(f"\nERROR: Couldn't fetch {set_code}, skipping this set. Reason: {scryfall_result.error_message}")
+        return []
+
+    print("Done.")
+    return scryfall_result.data
 
 
-def update_json_with_set(set_code, existing_commander_json: Dict[str, JsonCard]):
+def update_json_with_set(set_code: str, existing_commander_json: Dict[str, JsonCard]):
     """Given a set code and a dict with legality info, updates that dict with legality of cards from that set."""
     # fetches requested set as an array of card objects
     mtg_set = fetch_set(set_code)
@@ -57,12 +47,13 @@ def update_json_with_set(set_code, existing_commander_json: Dict[str, JsonCard])
 
 # ------------------------
 def main():
-    try:
-        set_code = sys.argv[1]
-    except:
-        print("ERROR: Set code must be provided")
-        sys.exit()
+    if len(sys.argv) != 2:  # The script itself is the first argument.
+        print(f"ERROR: Incorrect arguments.\n"
+              f"Correct usage: {sys.argv[0]} <set_code>\n"
+              f"Example: {sys.argv[0]} m21")
+        return
 
+    set_code = sys.argv[1]
     existing_json = FileHandler.get_existing_json()
     update_json_with_set(set_code, existing_json)
     FileHandler.save_format_json_to_file(existing_json)

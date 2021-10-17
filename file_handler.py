@@ -45,6 +45,7 @@ class FileHandler:
             full_json_text = jsonpickle.encode(
                 value=format_list, indent=2, separators=(",", ": "))
             output_file.write(full_json_text)
+            print(f"JSON successfully saved to {cls.RESULT_FILE}.")
 
         if last_set_release_date is not None:
             update_metadata = {"last_set_release_date": last_set_release_date.strftime(cls.DATE_FORMAT)}
@@ -53,3 +54,4 @@ class FileHandler:
                 full_json_text = jsonpickle.encode(
                     value=update_metadata, indent=2, separators=(",", ": "))
                 output_file.write(full_json_text)
+            print(f"Last set's release date successfully saved to {cls.UPDATE_METADATA_FILE}.")
