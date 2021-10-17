@@ -18,8 +18,7 @@ class JsonCard:
     # determines legality of a card based on rarity (legal, legal as commander, not legal) and banlist
     @classmethod
     def is_legal(cls, scryfall_queried_card):
-        front_card_face_typeline = scryfall_queried_card["type_line"].split(
-            "//")[0]
+        front_card_face_typeline = scryfall_queried_card["type_line"].split("//")[0]
         # check for bannings
         if scryfall_queried_card["name"] in cls.PDH_BANLIST:
             return Legality.BANNED
@@ -33,7 +32,7 @@ class JsonCard:
         if scryfall_queried_card["rarity"] == "common":
             return Legality.LEGAL
         elif scryfall_queried_card["rarity"] == "uncommon" and "Creature" in front_card_face_typeline:
-            if "Land" in scryfall_queried_card["type_line"]:
+            if "Land" in front_card_face_typeline:
                 return Legality.NOT_LEGAL
             return Legality.LEGAL_AS_COMMANDER
         else:
