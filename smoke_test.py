@@ -20,13 +20,22 @@ TEST_CARDS: List[TestCard] = [
     TestCard(  # Rare
         name="Ranger Class",
         legality=Legality.NOT_LEGAL),
+    TestCard(  # Mythic rare
+        name="Demilich",
+        legality=Legality.NOT_LEGAL),
     TestCard(  # Banned
         name="Rhystic Study",
         legality=Legality.BANNED),
     TestCard(  # Banned
         name="Mystic Remora",
         legality=Legality.BANNED),
-    TestCard(  # Banned because ante
+    TestCard(  # Banned
+        name="Stone-Throwing Devils",
+        legality=Legality.BANNED),
+    TestCard(  # Banned
+        name="Pradesh Gypsies",
+        legality=Legality.BANNED),
+    TestCard(  # Banned because of ante
         name="Tempest Efreet",
         legality=Legality.BANNED),
     TestCard(  # Land
@@ -85,7 +94,16 @@ TEST_CARDS: List[TestCard] = [
         legality=Legality.LEGAL),
     TestCard(  # Legal only because of an MTGO printing
         name="Chainer's Edict",
-        legality=Legality.LEGAL)
+        legality=Legality.LEGAL),
+    TestCard(  # Legal only because of Renaissance
+        name="Ball Lightning",
+        legality=Legality.LEGAL_AS_COMMANDER),
+    TestCard(  # Legal only because of Renaissance
+        name="Cursed Rack",
+        legality=Legality.LEGAL),
+    TestCard(  # Illegal because it cannot be included in a deck
+        name="Swords to Plowshares",
+        legality=Legality.NOT_LEGAL),
 ]
 
 
