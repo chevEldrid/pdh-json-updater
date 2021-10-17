@@ -20,6 +20,9 @@ TEST_CARDS: List[TestCard] = [
     TestCard(  # Rare
         name="Ranger Class",
         legality=Legality.NOT_LEGAL),
+    TestCard(  # Mythic rare
+        name="Demilich",
+        legality=Legality.NOT_LEGAL),
     TestCard(  # Banned
         name="Rhystic Study",
         legality=Legality.BANNED),
@@ -97,7 +100,10 @@ TEST_CARDS: List[TestCard] = [
         legality=Legality.LEGAL_AS_COMMANDER),
     TestCard(  # Legal only because of Renaissance
         name="Cursed Rack",
-        legality=Legality.LEGAL)
+        legality=Legality.LEGAL),
+    TestCard(  # Illegal because it cannot be included in a deck
+        name="Swords to Plowshares",
+        legality=Legality.NOT_LEGAL),
 ]
 
 
