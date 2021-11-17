@@ -5,6 +5,7 @@ from file_handler import FileHandler
 from legality import Legality
 from json_card import JsonCard
 
+
 def update_card_in_json(card_name: str, updated_legality: str, existing_format_json: Dict[str, JsonCard]):
     """Given a card name, its new legality, and a dict with legality info, updates the entry for that card in that dict."""
     if card_name in existing_format_json:

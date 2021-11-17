@@ -4,6 +4,7 @@ import jsonpickle
 import time
 from typing import List
 
+
 class ScryfallResponse:
     def __init__(self, data, was_successful=True, error_message=""):
         self.data: List = data
@@ -11,6 +12,7 @@ class ScryfallResponse:
         self.error_message: str = error_message
         if error_message is not None and error_message != "":
             self.was_successful = False
+
 
 class ScryfallFetcher:
     @staticmethod
