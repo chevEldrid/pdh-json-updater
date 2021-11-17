@@ -4,6 +4,7 @@ from file_handler import FileHandler
 from legality import Legality
 from json_card import JsonCard
 
+
 class TestCard:
     def __init__(self, name, legality):
         self.name: str = name
@@ -115,11 +116,11 @@ def main():
     for card in TEST_CARDS:
         if card.name in existing_commander_json:
             if card.legality == existing_commander_json[card.name].legality:
-                total_tests_passed = total_tests_passed + 1
+                total_tests_passed += 1
             else:
                 print(f"TEST FAILED: Expected {card.name} to be {card.legality}, but it was {existing_commander_json[card.name].legality}.")
         elif card.legality == Legality.NOT_LEGAL:
-            total_tests_passed = total_tests_passed + 1
+            total_tests_passed += 1
         else:
             print(f"TEST FAILED: Expected {card.name} to be {card.legality}, but it was {Legality.NOT_LEGAL}.")
 

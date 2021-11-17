@@ -1,5 +1,5 @@
 import sys
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 from scryfall_fetcher import ScryfallFetcher
 from file_handler import FileHandler
@@ -10,6 +10,7 @@ from json_card import JsonCard
 SCRYFALL_SET_SEARCH_URL = "https://api.scryfall.com/cards/search?q=r%3Cr+set%3A{0}{1}"
 # looks like scryfall api responses don't include specific 'type', just 'type line' so we can parse each card to check or...only search good ones
 CARDTYPE_SEARCH_MODIFIER = "+in%3Apaper+(legal%3Avintage+OR+restricted%3Avintage+OR+banned%3Avintage)"
+
 
 # Fetches an entire set of cards from Scryfall given the search url, and returns them as an array
 def fetch_set(set_code: str) -> List:
