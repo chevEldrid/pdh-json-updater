@@ -21,10 +21,10 @@ def update_card_in_json(card_name: str, updated_legality: str, existing_format_j
     """Given a card name, its new legality, and a dict with legality info, updates the entry for that card in that dict."""
     if card_name in existing_format_json:
         prev_card_ruling = existing_format_json[card_name]
-        if updated_legality in Legality:
-            prev_card_ruling.legality = updated_legality
+        try:
+            prev_card_ruling.legality = Legality[updated_legality].value
             LOGGER.info("Card object updated!")
-        else:
+        except KeyError:
             LOGGER.warning("ERROR: illegal rarity provided")
     else:
         LOGGER.warning(f"ERROR: {card_name} not found in existing commander json.")
