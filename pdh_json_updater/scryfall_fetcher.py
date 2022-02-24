@@ -17,7 +17,7 @@ class ScryfallResponse:
 class ScryfallFetcher:
     @staticmethod
     def fetch_data(url: str, raise_exceptions: bool) -> ScryfallResponse:
-        data = []
+        data: List = []
         try:
             while True:
                 response = requests.get(url)
