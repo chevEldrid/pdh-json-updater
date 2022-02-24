@@ -1,10 +1,10 @@
 test:
-	pytest -v tests/
+	poetry run pytest -v tests/
 
 lint:
-	pylint pdh_json_updater/ tests/
+	poetry run pylint pdh_json_updater/ tests/
 
-typing:
-	mypy pdh_json_updater/ tests/ --ignore-missing-imports --no-strict-optional
+type:
+	poetry run mypy pdh_json_updater/ tests/ --ignore-missing-imports --no-strict-optional
 
-all: test lint typing  ## recommended usage: `make all -k`
+all: test lint type  # recommended usage: `make all -k`
