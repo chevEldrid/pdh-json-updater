@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pdh-json-updater"
+version = "0.1.0"
+description = "Python scripts for updating the JSON file of all legal cards in the MTG PDH format"
+authors = ["Chev Eldrid"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.27.1"
+jsonpickle = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
