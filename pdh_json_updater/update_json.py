@@ -1,9 +1,9 @@
 from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Optional
 
-from scryfall_fetcher import ScryfallFetcher
-from file_handler import FileHandler
-from add_set import update_json_with_set
+from pdh_json_updater.scryfall_fetcher import ScryfallFetcher
+from pdh_json_updater.file_handler import FileHandler
+from pdh_json_updater.add_set import update_json_with_set
 
 SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
 ILLEGAL_SET_TYPES = ["token", "memorabilia", "funny"]

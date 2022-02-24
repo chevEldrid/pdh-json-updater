@@ -1,4 +1,4 @@
-from legality import Legality
+from pdh_json_updater.legality import Legality
 
 # transforms a scryfall card object into a json card object
 

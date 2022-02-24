@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "Python scripts for updating the JSON file of all legal cards in the MTG PDH format"
 authors = ["Chev Eldrid"]
 
+[tool.poetry.scripts]
+update-card = "pdh_json_updater.update_card:main"
+
 [tool.poetry.dependencies]
 python = "^3.6"
 requests = "^2.27.1"
