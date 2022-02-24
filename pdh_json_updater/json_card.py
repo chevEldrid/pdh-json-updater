@@ -4,8 +4,13 @@ from pdh_json_updater.legality import Legality
 
 
 class JsonCard:
-    PDH_BANLIST = ["Rhystic Study", "Mystic Remora",
-                   "Stone-Throwing Devils", "Pradesh Gypsies", "Tempest Efreet"]
+    PDH_BANLIST = [
+        "Rhystic Study",
+        "Mystic Remora",
+        "Stone-Throwing Devils",
+        "Pradesh Gypsies",
+        "Tempest Efreet",
+    ]
     # Cards "banned" as a workaround, e.g. due to incorrect rarities in Scryfall
     SOFT_BANLIST = ["Spatial Contortion", "Circle of Flame", "Swords to Plowshares"]
     ILLEGAL_CARD_TYPES = ["Conspiracy"]
@@ -31,7 +36,10 @@ class JsonCard:
         # check rarity
         if scryfall_queried_card["rarity"] == "common":
             return Legality.LEGAL
-        elif scryfall_queried_card["rarity"] == "uncommon" and "Creature" in front_card_face_typeline:
+        elif (
+            scryfall_queried_card["rarity"] == "uncommon"
+            and "Creature" in front_card_face_typeline
+        ):
             if "Land" in front_card_face_typeline:
                 return Legality.NOT_LEGAL
             return Legality.LEGAL_AS_COMMANDER

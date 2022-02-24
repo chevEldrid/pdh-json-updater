@@ -15,7 +15,9 @@ class SetcodeFetchResult:
         self.last_set_release_date = last_set_release_date
 
 
-def fetch_setcodes_as_recent_as(earliest_allowed_date: Optional[datetime]) -> SetcodeFetchResult:
+def fetch_setcodes_as_recent_as(
+    earliest_allowed_date: Optional[datetime],
+) -> SetcodeFetchResult:
     """Given a datetime, returns a list of all codes of sets, which fulfill all conditions:
 
     * are already released when this check is performed
@@ -23,23 +25,34 @@ def fetch_setcodes_as_recent_as(earliest_allowed_date: Optional[datetime]) -> Se
     * aren't of an illegal type (such as un-sets)
     In addition to that, the release date of the newest returned set is returned as well.
     If no sets are returned, returns the given date instead."""
-    print("Starting to fetch missing sets...", end=' ')
+    print("Starting to fetch missing sets...", end=" ")
     setcodes_to_load: List[str] = []
-    now = datetime.now(timezone.utc)  # We specify whatever time zone to make it time-zone-aware.
+    now = datetime.now(
+        timezone.utc
+    )  # We specify whatever time zone to make it time-zone-aware.
 
-    scryfall_response = ScryfallFetcher.fetch_data(SCRYFALL_SETS_SEARCH_URL, raise_exceptions=True)
+    scryfall_response = ScryfallFetcher.fetch_data(
+        SCRYFALL_SETS_SEARCH_URL, raise_exceptions=True
+    )
     total_sets: List[Dict[str, str]] = scryfall_response.data
 
-    _SCRYFALL_DATE_FORMAT = '%Y-%m-%d'
-    _SCRYFALL_RELEASE_DATE_TIMEZONE = timezone(timedelta(hours=-8))  # Scryfall uses UTC -8 for release dates.
+    _SCRYFALL_DATE_FORMAT = "%Y-%m-%d"
+    _SCRYFALL_RELEASE_DATE_TIMEZONE = timezone(
+        timedelta(hours=-8)
+    )  # Scryfall uses UTC -8 for release dates.
 
     last_set_release_date: Optional[datetime] = None
     for card_set in total_sets:
-        release_date = datetime.strptime(card_set["released_at"], _SCRYFALL_DATE_FORMAT)\
-            .replace(tzinfo=_SCRYFALL_RELEASE_DATE_TIMEZONE)  # We add info about time zone.
-        if release_date <= now \
-                and (earliest_allowed_date is None or earliest_allowed_date <= release_date) \
-                and card_set["set_type"] not in ILLEGAL_SET_TYPES:
+        release_date = datetime.strptime(
+            card_set["released_at"], _SCRYFALL_DATE_FORMAT
+        ).replace(
+            tzinfo=_SCRYFALL_RELEASE_DATE_TIMEZONE
+        )  # We add info about time zone.
+        if (
+            release_date <= now
+            and (earliest_allowed_date is None or earliest_allowed_date <= release_date)
+            and card_set["set_type"] not in ILLEGAL_SET_TYPES
+        ):
             setcodes_to_load.append(card_set["code"])
             if last_set_release_date is None:
                 # Sets are sorted by release date, so the first set we append
@@ -49,9 +62,10 @@ def fetch_setcodes_as_recent_as(earliest_allowed_date: Optional[datetime]) -> Se
     if last_set_release_date is None:
         last_set_release_date = earliest_allowed_date
 
-    print(f"Done.\n"
-          f"Fetched sets: {setcodes_to_load}")
-    return SetcodeFetchResult(setcodes=setcodes_to_load, last_set_release_date=last_set_release_date)
+    print(f"Done.\n" f"Fetched sets: {setcodes_to_load}")
+    return SetcodeFetchResult(
+        setcodes=setcodes_to_load, last_set_release_date=last_set_release_date
+    )
 
 
 # ---------------------------------------------------------
@@ -60,7 +74,9 @@ def main():
     current_last_set_release_date = FileHandler.get_last_set_release_date()
 
     _DAYS_TO_LOOK_BEHIND = 1
-    setcode_fetch_result = fetch_setcodes_as_recent_as(current_last_set_release_date - timedelta(days=_DAYS_TO_LOOK_BEHIND))
+    setcode_fetch_result = fetch_setcodes_as_recent_as(
+        current_last_set_release_date - timedelta(days=_DAYS_TO_LOOK_BEHIND)
+    )
     # For simplicity we'll say N instead of _DAYS_TO_LOOK_BEHIND.
     # We subtract N days as a safety measure to lower the odds of issues in case Scryfall is late with adding sets.
     # Ideally instead of looking at the release date of sets we'd look at the date when sets are done adding to Scryfall,

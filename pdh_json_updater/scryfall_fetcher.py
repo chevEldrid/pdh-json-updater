@@ -22,14 +22,16 @@ class ScryfallFetcher:
             while True:
                 response = requests.get(url)
                 jsonpickled_response = None
-                if "application/json" in response.headers['content-type']:
+                if "application/json" in response.headers["content-type"]:
                     jsonpickled_response = jsonpickle.loads(response.text, safe=True)
 
                 if not response.ok or jsonpickled_response is None:
                     error_message: str
-                    if jsonpickled_response is not None \
-                            and isinstance(jsonpickled_response, dict) \
-                            and "details" in jsonpickled_response:
+                    if (
+                        jsonpickled_response is not None
+                        and isinstance(jsonpickled_response, dict)
+                        and "details" in jsonpickled_response
+                    ):
                         error_message = jsonpickled_response["details"]
                     else:
                         error_message = response.text
@@ -37,12 +39,14 @@ class ScryfallFetcher:
                     if raise_exceptions:
                         raise ConnectionError(error_message)
                     else:
-                        return ScryfallResponse(data, was_successful=False, error_message=error_message)
+                        return ScryfallResponse(
+                            data, was_successful=False, error_message=error_message
+                        )
 
                 data.extend(jsonpickled_response["data"])
                 if jsonpickled_response["has_more"]:
                     url = jsonpickled_response["next_page"]
-                    time.sleep(.15)
+                    time.sleep(0.15)
                 else:
                     break
 
@@ -50,6 +54,8 @@ class ScryfallFetcher:
             if raise_exceptions:
                 raise
             else:
-                return ScryfallResponse(data, was_successful=False, error_message=traceback.format_exc())
+                return ScryfallResponse(
+                    data, was_successful=False, error_message=traceback.format_exc()
+                )
 
         return ScryfallResponse(data)
