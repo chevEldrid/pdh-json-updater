@@ -1,8 +1,8 @@
 from typing import Dict, List
 
-from file_handler import FileHandler
-from legality import Legality
-from json_card import JsonCard
+from pdh_json_updater.file_handler import FileHandler
+from pdh_json_updater.legality import Legality
+from pdh_json_updater.json_card import JsonCard
 
 
 class TestCard:

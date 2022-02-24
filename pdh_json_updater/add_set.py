@@ -1,10 +1,10 @@
 import sys
 from typing import Dict, List
 
-from scryfall_fetcher import ScryfallFetcher
-from file_handler import FileHandler
-from legality import Legality
-from json_card import JsonCard
+from pdh_json_updater.scryfall_fetcher import ScryfallFetcher
+from pdh_json_updater.file_handler import FileHandler
+from pdh_json_updater.legality import Legality
+from pdh_json_updater.json_card import JsonCard
 
 # search for cards of rarity less than r and set of...
 SCRYFALL_SET_SEARCH_URL = "https://api.scryfall.com/cards/search?q=r%3Cr+set%3A{0}{1}"

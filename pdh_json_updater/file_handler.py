@@ -3,7 +3,7 @@ import os
 import jsonpickle
 from typing import List, Dict, Optional
 
-from json_card import JsonCard
+from pdh_json_updater.json_card import JsonCard
 
 
 class FileHandler:
