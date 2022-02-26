@@ -1,3 +1,4 @@
+"""Test basic database card serialization functionality"""
 from typing import Dict, List
 
 from pdh_json_updater.file_handler import FileHandler
@@ -5,7 +6,9 @@ from pdh_json_updater.legality import Legality
 from pdh_json_updater.json_card import JsonCard
 
 
-class MockCard:
+class MockCard:  # pylint: disable=too-few-public-methods
+    """Mock dataclass for cards stored in JSON database"""
+
     def __init__(self, name, legality):
         self.name: str = name
         self.legality: str = legality
@@ -79,6 +82,7 @@ TEST_CARDS: List[MockCard] = [
 
 
 def test_smoke():
+    """Test basic database operations"""
     existing_commander_json: Dict[str, JsonCard] = FileHandler.get_existing_json()
     total_tests = len(TEST_CARDS)
     total_tests_passed = 0

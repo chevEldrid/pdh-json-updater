@@ -1,3 +1,4 @@
+"""JSON database updating functions"""
 from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Optional
 
@@ -9,7 +10,9 @@ SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
 ILLEGAL_SET_TYPES = ["token", "memorabilia", "funny"]
 
 
-class SetcodeFetchResult:
+class SetcodeFetchResult:  # pylint: disable=too-few-public-methods
+    """Data class for card setcode results from Scryfall"""
+
     def __init__(self, setcodes: List[str], last_set_release_date: datetime):
         self.setcodes = setcodes
         self.last_set_release_date = last_set_release_date
@@ -36,17 +39,17 @@ def fetch_setcodes_as_recent_as(
     )
     total_sets: List[Dict[str, str]] = scryfall_response.data
 
-    _SCRYFALL_DATE_FORMAT = "%Y-%m-%d"
-    _SCRYFALL_RELEASE_DATE_TIMEZONE = timezone(
+    scryfall_date_format = "%Y-%m-%d"
+    scryfall_release_date_timezone = timezone(
         timedelta(hours=-8)
     )  # Scryfall uses UTC -8 for release dates.
 
     last_set_release_date: Optional[datetime] = None
     for card_set in total_sets:
         release_date = datetime.strptime(
-            card_set["released_at"], _SCRYFALL_DATE_FORMAT
+            card_set["released_at"], scryfall_date_format
         ).replace(
-            tzinfo=_SCRYFALL_RELEASE_DATE_TIMEZONE
+            tzinfo=scryfall_release_date_timezone
         )  # We add info about time zone.
         if (
             release_date <= now
@@ -70,14 +73,15 @@ def fetch_setcodes_as_recent_as(
 
 # ---------------------------------------------------------
 def main():
+    """Primary entrypoint to update-json script"""
     existing_json = FileHandler.get_existing_json()
     current_last_set_release_date = FileHandler.get_last_set_release_date()
 
-    _DAYS_TO_LOOK_BEHIND = 1
+    days_to_look_behind = 1
     setcode_fetch_result = fetch_setcodes_as_recent_as(
-        current_last_set_release_date - timedelta(days=_DAYS_TO_LOOK_BEHIND)
+        current_last_set_release_date - timedelta(days=days_to_look_behind)
     )
-    # For simplicity we'll say N instead of _DAYS_TO_LOOK_BEHIND.
+    # For simplicity we'll say N instead of days_to_look_behind.
     # We subtract N days as a safety measure to lower the odds of issues in case Scryfall is late with adding sets.
     # Ideally instead of looking at the release date of sets we'd look at the date when sets are done adding to Scryfall,
     # but as far as I know Scryfall's API doesn't have such info.

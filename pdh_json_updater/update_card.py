@@ -1,4 +1,4 @@
-import sys
+"""Database updater script for a single card entry"""
 import logging
 from argparse import ArgumentParser
 from argparse import Namespace
@@ -39,6 +39,7 @@ def update_card_in_json(
 
 
 def main():
+    """Primary entrypoint for `update-card` script"""
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",

@@ -1,3 +1,4 @@
+"""File handlers classes"""
 from datetime import datetime, timezone
 import os
 import jsonpickle
@@ -7,6 +8,8 @@ from pdh_json_updater.json_card import JsonCard
 
 
 class FileHandler:
+    """File handler abstraction for stored json data"""
+
     RESULT_FILE = "pauper_commander.json"
     UPDATE_METADATA_FILE = "last_update_metadata.json"
     DATE_FORMAT = "%Y-%m-%d%z"
@@ -17,7 +20,7 @@ class FileHandler:
         If the file doesn't exist, an empty dict is returned."""
         existing_json: Dict[str, JsonCard] = {}
         if os.path.exists(cls.RESULT_FILE):
-            with open(cls.RESULT_FILE) as card_file:
+            with open(cls.RESULT_FILE, encoding="utf-8") as card_file:
                 data: List[JsonCard] = jsonpickle.decode(card_file.read())
                 for card in data:
                     existing_json[card.name] = card
@@ -28,7 +31,9 @@ class FileHandler:
         """Gets the JSON file storing update metadata and returns the last set's release date as a time-zone-aware datetime.
         If the file doesn't exist, None is returned."""
         if os.path.exists(cls.UPDATE_METADATA_FILE):
-            with open(cls.UPDATE_METADATA_FILE) as update_metadata_file:
+            with open(
+                cls.UPDATE_METADATA_FILE, encoding="utf-8"
+            ) as update_metadata_file:
                 data: Dict[str, str] = jsonpickle.decode(update_metadata_file.read())
                 string_last_set_release_date = data["last_set_release_date"]
                 try:
@@ -55,7 +60,7 @@ class FileHandler:
         format_list = list(updated_format_json.values())
         format_list.sort(key=lambda x: x.name, reverse=False)
 
-        with open(cls.RESULT_FILE, "w") as output_file:
+        with open(cls.RESULT_FILE, "w", encoding="utf-8") as output_file:
             full_json_text = jsonpickle.encode(
                 value=format_list, indent=2, separators=(",", ": ")
             )
@@ -67,7 +72,7 @@ class FileHandler:
                 "last_set_release_date": last_set_release_date.strftime(cls.DATE_FORMAT)
             }
 
-            with open(cls.UPDATE_METADATA_FILE, "w") as output_file:
+            with open(cls.UPDATE_METADATA_FILE, "w", encoding="utf-8") as output_file:
                 full_json_text = jsonpickle.encode(
                     value=update_metadata, indent=2, separators=(",", ": ")
                 )

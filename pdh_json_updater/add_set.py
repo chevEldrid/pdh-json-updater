@@ -1,3 +1,4 @@
+"""Database updating functions for entire MTG sets"""
 import sys
 from typing import Dict, List
 
@@ -14,8 +15,8 @@ CARDTYPE_SEARCH_MODIFIER = (
 )
 
 
-# Fetches an entire set of cards from Scryfall given the search url, and returns them as an array
 def fetch_set(set_code: str) -> List:
+    """Fetches an entire set of cards from Scryfall given the search url, and returns them as an array"""
     url = SCRYFALL_SET_SEARCH_URL.format(set_code, CARDTYPE_SEARCH_MODIFIER)
     print(f"Attempting to fetch set {set_code}...", end=" ")
 
@@ -55,6 +56,7 @@ def update_json_with_set(set_code: str, existing_commander_json: Dict[str, JsonC
 
 # ------------------------
 def main():
+    """Primary entrypoint for add-set script"""
     if len(sys.argv) != 2:  # The script itself is the first argument.
         print(
             f"ERROR: Incorrect arguments.\n"
