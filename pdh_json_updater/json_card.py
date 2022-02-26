@@ -1,23 +1,34 @@
+"""Transforms a Scryfall card object into a json card object"""
 from pdh_json_updater.legality import Legality
 
-# transforms a scryfall card object into a json card object
 
+class JsonCard:  # pylint: disable=too-few-public-methods
+    """JSON serialization class for MTG cards"""
 
-class JsonCard:
-    PDH_BANLIST = ["Rhystic Study", "Mystic Remora",
-                   "Stone-Throwing Devils", "Pradesh Gypsies", "Tempest Efreet"]
+    PDH_BANLIST = [
+        "Rhystic Study",
+        "Mystic Remora",
+        "Stone-Throwing Devils",
+        "Pradesh Gypsies",
+        "Tempest Efreet",
+    ]
     # Cards "banned" as a workaround, e.g. due to incorrect rarities in Scryfall
     SOFT_BANLIST = ["Spatial Contortion", "Circle of Flame", "Swords to Plowshares"]
     ILLEGAL_CARD_TYPES = ["Conspiracy"]
 
     def __init__(self, scryfall_queried_card):
-        self.scryfallOracleId: str = scryfall_queried_card["oracle_id"]
+        self.scryfallOracleId: str = (  # pylint: disable=invalid-name
+            scryfall_queried_card["oracle_id"]
+        )
         self.name: str = scryfall_queried_card["name"]
         self.legality = JsonCard.is_legal(scryfall_queried_card)
 
     # determines legality of a card based on rarity (legal, legal as commander, not legal) and banlist
     @classmethod
-    def is_legal(cls, scryfall_queried_card):
+    def is_legal(
+        cls, scryfall_queried_card
+    ):  # pylint: disable=too-many-return-statements
+        """Get a MTG card's PDH legality"""
         front_card_face_typeline = scryfall_queried_card["type_line"].split("//")[0]
         # check for bannings
         if scryfall_queried_card["name"] in cls.PDH_BANLIST:
@@ -31,9 +42,11 @@ class JsonCard:
         # check rarity
         if scryfall_queried_card["rarity"] == "common":
             return Legality.LEGAL
-        elif scryfall_queried_card["rarity"] == "uncommon" and "Creature" in front_card_face_typeline:
+        if (
+            scryfall_queried_card["rarity"] == "uncommon"
+            and "Creature" in front_card_face_typeline
+        ):
             if "Land" in front_card_face_typeline:
                 return Legality.NOT_LEGAL
             return Legality.LEGAL_AS_COMMANDER
-        else:
-            return Legality.NOT_LEGAL
+        return Legality.NOT_LEGAL

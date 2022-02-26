@@ -1,0 +1,39 @@
+name: Run Pull Request Continuous Integration Checks
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  run-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v2
+      - name: Setup minimum python version compatible with project
+        uses: actions/setup-python@v2
+        with:  # 3.6.15 is available on ubuntu-latest by default, cuts down on run time
+          python-version: 3.6.15  
+      - name: Load cached pypoetry installation and virtualenvs
+        uses: actions/cache@v2
+        with:
+          path: ~/.local
+          key: local-pypoetry
+      - name: Install pypoetry
+        uses: snok/install-poetry@v1.3.0
+        with:
+          version: 1.1.13
+          virtualenvs-path: ~/.local/opt/virtualenvs
+      - name: Install/update project dependencies
+        id: install-deps
+        run: poetry install --no-interaction
+      - name: Run unit tests
+        if: always() && steps.install-deps.conclusion == 'success'
+        run: make test
+      - name: Lint codebase
+        if: always() && steps.install-deps.conclusion == 'success'
+        run: make lint
+      - name: Type-check codebase
+        if: always() && steps.install-deps.conclusion == 'success'
+        run: make type
