@@ -38,7 +38,7 @@ jobs:
         id: check-update
         run: echo "::set-output name=was-updated::$(git diff --quiet pauper_commander.json; echo $?)"
       - name: test
-        run: echo ${{ steps.check-update.was-updated }}
+        run: echo "${{ steps.check-update.was-updated }}"
       - name: Get current date
         id: get-date
         if: steps.check-update.was-updated == '1'
