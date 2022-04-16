@@ -29,27 +29,25 @@ jobs:
           virtualenvs-path: ~/.local/opt/virtualenvs
       - name: Install/update project dependencies
         run: poetry install --no-interaction
-      - name: Update database if needed
+      - name: Attempt database update
         # run: poetry run python pdh_json_updater/update_json.py
         run: |
           echo "test" >> pauper_commander.json
           echo "test" >> last_update_metadata.json
-      - name: Check for database updates
+      - name: Check if database update occurred
         id: check-update
-        run: git diff --exit-code pauper_commander.json
-      - name: Commit database changes
-        if: always() && steps.check-update.conclusion == 'failure'
-        run: |
-          git config --global user.email "<>"
-          git config --global user.name "Github Actions Bot"
-          git checkout -b "database-update/$(date +%Y-%m-%d)"
-          git add pauper_commander.json last_update_metadata.json
-          git commit -m "Database update $(date +%Y-%m-%d)"
+        run: echo "::set-output name=was-updated::$(git diff --quiet pauper_commander.json; echo $?)"
+      - name: Get current date
+        id: get-date
+        if: steps.check-update.was-updated == '1'
+        run: echo "::set-output name=current-date::$(date +%Y-%m-%d)"
       - name: Submit pull request for database updates
-        if: always() && steps.check-update.conclusion == 'failure'
-        uses: repo-sync/pull-request@v2
+        if: steps.check-update.was-updated == '1'
+        uses: peter-evans/create-pull-request@v3
         with:
-          destination_branch: "master"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          pr_title: "Database update $(date +%Y-%m-%d)"
+          add-paths: pauper_commander.json, last_update_metadata.json
+          branch: database-update/${{ steps.get-date.current-date }}
+          commit-message: Database update ${{ steps.get-date.current-date }}
+          title: Database update ${{ steps.get-date.current-date }}
+          reviewers: oakreid, chevEldrid
 
