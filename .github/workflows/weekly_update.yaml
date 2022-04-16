@@ -38,18 +38,18 @@ jobs:
         id: check-update
         run: echo "::set-output name=was-updated::$(git diff --quiet pauper_commander.json; echo $?)"
       - name: test
-        run: echo "${{ steps.check-update.was-updated }}"
+        run: echo "${{ steps.check-update.outputs.was-updated }}"
       - name: Get current date
         id: get-date
-        if: steps.check-update.was-updated == '1'
+        if: steps.check-update.outputs.was-updated == '1'
         run: echo "::set-output name=current-date::$(date +%Y-%m-%d)"
       - name: Submit pull request for database updates
-        if: steps.check-update.was-updated == '1'
+        if: steps.check-update.outputs.was-updated == '1'
         uses: peter-evans/create-pull-request@v3
         with:
           add-paths: pauper_commander.json, last_update_metadata.json
-          branch: database-update/${{ steps.get-date.current-date }}
-          commit-message: Database update ${{ steps.get-date.current-date }}
-          title: Database update ${{ steps.get-date.current-date }}
+          branch: database-update/${{ steps.get-date.outputs.current-date }}
+          commit-message: Database update ${{ steps.get-date.outputs.current-date }}
+          title: Database update ${{ steps.get-date.outputs.current-date }}
           reviewers: oakreid, chevEldrid
 
