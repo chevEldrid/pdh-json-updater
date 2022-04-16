@@ -1,0 +1,50 @@
+name: Run Weekly Database Update Automation
+
+on:
+  #schedule:
+  #  cron: '0 9 * * 6'  # 9am every Saturday
+  push:
+    branches:
+      - oakley/weekly-automation 
+
+jobs:
+  run-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v2
+      - name: Setup minimum python version compatible with project
+        uses: actions/setup-python@v2
+        with:  # 3.6.15 is available on ubuntu-latest by default, cuts down on run time
+          python-version: 3.6.15  
+      - name: Load cached pypoetry installation and virtualenvs
+        uses: actions/cache@v2
+        with:
+          path: ~/.local
+          key: local-pypoetry
+      - name: Install pypoetry
+        uses: snok/install-poetry@v1.3.0
+        with:
+          version: 1.1.13
+          virtualenvs-path: ~/.local/opt/virtualenvs
+      - name: Install/update project dependencies
+        run: poetry install --no-interaction
+      - name: Update database if needed
+        run: poetry run python pdh_json_updater/update_json.py
+      - name: Check for database updates
+        id: check-update
+        run: git diff --exit-code pauper_commander.json
+      - name: Commit database changes
+        if: always() && steps.check-update.conclusion == 'failure'
+        run: |
+          git checkout -b "database-update/$(date +%Y-%m-%d)"
+          git add pauper_commander.json last_update_metadata.json
+          git commit -m "Database update $(date +%Y-%m-%d)"
+      - name: Submit pull request for database updates
+        if: always() && steps.check-update.conclusion == 'failure'
+        uses: repo-sync/pull-request@v2
+        with:
+          destination-branch: "master"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: "Database update $(date +%Y-%m-%d)"
+
