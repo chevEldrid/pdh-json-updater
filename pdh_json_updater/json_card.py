@@ -32,21 +32,21 @@ class JsonCard:  # pylint: disable=too-few-public-methods
         front_card_face_typeline = scryfall_queried_card["type_line"].split("//")[0]
         # check for bannings
         if scryfall_queried_card["name"] in cls.PDH_BANLIST:
-            return Legality.BANNED
+            return Legality.BANNED.value
         # fixes rarity issues by allowing certain cards to be rendered "not legal"
         if scryfall_queried_card["name"] in cls.SOFT_BANLIST:
-            return Legality.NOT_LEGAL
+            return Legality.NOT_LEGAL.value
         # check illegal card types
         if front_card_face_typeline in cls.ILLEGAL_CARD_TYPES:
-            return Legality.NOT_LEGAL
+            return Legality.NOT_LEGAL.value
         # check rarity
         if scryfall_queried_card["rarity"] == "common":
-            return Legality.LEGAL
+            return Legality.LEGAL.value
         if (
             scryfall_queried_card["rarity"] == "uncommon"
             and "Creature" in front_card_face_typeline
         ):
             if "Land" in front_card_face_typeline:
-                return Legality.NOT_LEGAL
-            return Legality.LEGAL_AS_COMMANDER
-        return Legality.NOT_LEGAL
+                return Legality.NOT_LEGAL.value
+            return Legality.LEGAL_AS_COMMANDER.value
+        return Legality.NOT_LEGAL.value

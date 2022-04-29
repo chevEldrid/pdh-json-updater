@@ -40,16 +40,16 @@ def update_json_with_set(set_code: str, existing_commander_json: Dict[str, JsonC
         json_card = JsonCard(card)
         card_name = json_card.name
 
-        if json_card.legality != Legality.NOT_LEGAL:
+        if json_card.legality != Legality.NOT_LEGAL.value:
             # if this is first printing, add to list. If this is a reprint, requires a little extra checking
             # if card["reprint"]: <- much cleaner, but only works if sets added chronologically since first printing, reprint = false
             if card_name in existing_commander_json:
                 prev_card_ruling = existing_commander_json[card_name]
                 if (
-                    prev_card_ruling.legality == Legality.LEGAL_AS_COMMANDER
-                    and json_card.legality == Legality.LEGAL
+                    prev_card_ruling.legality == Legality.LEGAL_AS_COMMANDER.value
+                    and json_card.legality == Legality.LEGAL.value
                 ):
-                    prev_card_ruling.legality = Legality.LEGAL
+                    prev_card_ruling.legality = Legality.LEGAL.value
             else:
                 existing_commander_json[card_name] = json_card
 
