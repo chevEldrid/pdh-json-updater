@@ -78,6 +78,12 @@ TEST_CARDS: List[MockCard] = [
     MockCard(  # Illegal because it cannot be included in a deck
         name="Swords to Plowshares", legality=Legality.NOT_LEGAL
     ),
+    MockCard ( # Legal As Commander Uncommon Background
+        name="Acolyte of Bahamut", legality=Legality.LEGAL_AS_COMMANDER
+    ),
+    MockCard ( # Legal in 99 Common Background
+        name="Candlekeep Sage", legality=Legality.LEGAL
+    ),
 ]
 
 

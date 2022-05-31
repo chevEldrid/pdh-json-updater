@@ -42,6 +42,12 @@ class JsonCard:  # pylint: disable=too-few-public-methods
         # check rarity
         if scryfall_queried_card["rarity"] == "common":
             return Legality.LEGAL.value
+        # check for backgrounds, Legal Enchantment Commanders
+        if (
+            scryfall_queried_card["rarity"] == "uncommon"
+            and "Background" in front_card_face_typeline
+        ):
+            return Legality.LEGAL_AS_COMMANDER.value
         if (
             scryfall_queried_card["rarity"] == "uncommon"
             and "Creature" in front_card_face_typeline
