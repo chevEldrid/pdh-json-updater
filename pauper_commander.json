@@ -43681,6 +43681,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "cd133d30-51ff-4114-a7d7-029345f0f0d7",
+    "name": "Omnath, Locus of Creation",
+    "legality": "Legal"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "fa10cacb-ab14-447a-b411-9d74bc3772fb",
     "name": "Onakke Ogre",
     "legality": "Legal"
