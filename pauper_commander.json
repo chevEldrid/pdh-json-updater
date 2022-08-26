@@ -15121,12 +15121,6 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "0bbab99f-2ff6-4d48-b7c1-1ab0500c9422",
-    "name": "Demogorgon's Clutches",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "08c6d2fd-d9ae-4f95-bb9d-7e16b1039814",
     "name": "Demolish",
     "legality": "Legal"
@@ -32019,7 +32013,7 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "43990801-ed4a-49ff-a96e-03faa302214f",
     "name": "Iron Golem",
-    "legality": "Legal"
+    "legality": "Legal As Commander"
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -73143,12 +73137,6 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "e0945337-1833-4545-a83f-fca673e7f0d0",
     "name": "You Come to the Gnoll Camp",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "467c526a-02a7-405d-98de-c632ea83519b",
-    "name": "You Find Some Prisoners",
     "legality": "Legal"
   },
   {
