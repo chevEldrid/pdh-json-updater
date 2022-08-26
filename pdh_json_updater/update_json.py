@@ -7,7 +7,7 @@ from pdh_json_updater.file_handler import FileHandler
 from pdh_json_updater.add_set import update_json_with_set
 
 SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
-ILLEGAL_SET_TYPES = ["token", "memorabilia", "funny"]
+ILLEGAL_SET_TYPES = ["alchemy", "token", "memorabilia", "funny"]
 
 
 class SetcodeFetchResult:  # pylint: disable=too-few-public-methods
@@ -100,7 +100,9 @@ def main():
     for code in codes_to_update:
         update_json_with_set(code, existing_json)
 
-    FileHandler.save_format_json_to_file(existing_json, new_last_set_release_date)
+    FileHandler.save_format_json_to_file(
+        existing_json, new_last_set_release_date
+    )
 
 
 main()
