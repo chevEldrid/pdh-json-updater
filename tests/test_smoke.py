@@ -84,6 +84,21 @@ TEST_CARDS: List[MockCard] = [
     MockCard ( # Legal in 99 Common Background
         name="Candlekeep Sage", legality=Legality.LEGAL
     ),
+    MockCard( # Legal As Commander from Unset
+        name="Ambassador Blorpityblorpboop", legality=Legality.LEGAL_AS_COMMANDER
+    ),
+    MockCard( # Illegal Commander from Unset
+        name="Juggletron", legality=Legality.NOT_LEGAL
+    ),
+    MockCard( # Legal in 99 from Unset
+        name="Croakid Amphibonaut", legality=Legality.LEGAL
+    ),
+    MockCard( # Illegal in 99 from Unset
+        name="Bar Entry", legality=Legality.NOT_LEGAL
+    ),
+    MockCard( # Illegal card type
+        name="Clown Extruder", legality=Legality.NOT_LEGAL
+    ),
 ]
 
 

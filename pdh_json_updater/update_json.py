@@ -7,7 +7,7 @@ from pdh_json_updater.file_handler import FileHandler
 from pdh_json_updater.add_set import update_json_with_set
 
 SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
-ILLEGAL_SET_TYPES = ["alchemy", "token", "memorabilia", "funny"]
+ILLEGAL_SET_TYPES = ["alchemy", "token", "memorabilia"]
 
 
 class SetcodeFetchResult:  # pylint: disable=too-few-public-methods
@@ -25,7 +25,7 @@ def fetch_setcodes_as_recent_as(
 
     * are already released when this check is performed
     * were released after or at the same day as the given datetime (if date is None, this condition is ignored);
-    * aren't of an illegal type (such as un-sets)
+    * aren't of an illegal type (such as alchemy sets)
     In addition to that, the release date of the newest returned set is returned as well.
     If no sets are returned, returns the given date instead."""
     print("Starting to fetch missing sets...", end=" ")
