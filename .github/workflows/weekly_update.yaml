@@ -44,4 +44,11 @@ jobs:
           commit-message: Database update ${{ steps.get-date.outputs.current-date }}
           title: Database update ${{ steps.get-date.outputs.current-date }}
           reviewers: oakreid, chevEldrid
-
+      - name: Checkout PR branch
+        if: steps.check-update.outputs.was-updated == '1'
+        uses: actions/checkout@v2
+        with:
+          ref: database-update/${{ steps.get-date.outputs.current-date }}
+      - name: Run unit tests
+        if: steps.check-update.outputs.was-updated == '1'
+        run: make test
