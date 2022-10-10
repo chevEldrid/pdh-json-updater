@@ -28,9 +28,6 @@ jobs:
       - name: Install/update project dependencies
         id: install-deps
         run: poetry install --no-interaction
-      - name: Run unit tests
-        if: always() && steps.install-deps.conclusion == 'success'
-        run: make test
       - name: Lint codebase
         if: always() && steps.install-deps.conclusion == 'success'
         run: make lint
