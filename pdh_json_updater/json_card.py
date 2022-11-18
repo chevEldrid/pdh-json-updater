@@ -14,7 +14,7 @@ class JsonCard:  # pylint: disable=too-few-public-methods
     ]
     # Cards "banned" as a workaround, e.g. due to incorrect rarities in Scryfall
     SOFT_BANLIST = ["Spatial Contortion", "Circle of Flame", "Swords to Plowshares"]
-    ILLEGAL_CARD_TYPES = ["Conspiracy", "Attraction"]
+    ILLEGAL_CARD_TYPES = ["Conspiracy"]
 
     def __init__(self, scryfall_queried_card):
         self.scryfallOracleId: str = (  # pylint: disable=invalid-name

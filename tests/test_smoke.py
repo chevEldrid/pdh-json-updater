@@ -96,8 +96,8 @@ TEST_CARDS: List[MockCard] = [
     MockCard( # Illegal in 99 from Unset
         name="Bar Entry", legality=Legality.NOT_LEGAL
     ),
-    MockCard( # Illegal card type
-        name="Clown Extruder", legality=Legality.NOT_LEGAL
+    MockCard( # Legal card type (Attraction)
+        name="Clown Extruder", legality=Legality.LEGAL
     ),
 ]
 
