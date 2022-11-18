@@ -3,6 +3,7 @@ name: Run Weekly Database Update Automation
 on:
   schedule:
     - cron: '0 9 * * 5'  # 9am (UTC) every Friday
+  workflow_dispatch: {}
 
 jobs:
   run-update:
