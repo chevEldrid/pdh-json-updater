@@ -39,6 +39,9 @@ class JsonCard:  # pylint: disable=too-few-public-methods
         # check illegal card types
         if front_card_face_typeline in cls.ILLEGAL_CARD_TYPES:
             return Legality.NOT_LEGAL.value
+        # check illegal game types
+        if "paper" not in scryfall_queried_card["games"] or "mtgo" not in scryfall_queried_card["games"]:
+            return Legality.NOT_LEGAL.value
         # check rarity
         if scryfall_queried_card["rarity"] == "common":
             return Legality.LEGAL.value

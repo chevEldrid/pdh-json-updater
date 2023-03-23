@@ -62713,12 +62713,6 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "d03860b4-c663-4230-9200-6b89fa849ae7",
-    "name": "Spiritual Guardian",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "40759025-91e1-4755-a8cf-0b68c8e9220f",
     "name": "Spiritual Visit",
     "legality": "Legal"
@@ -74457,7 +74451,7 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "64e0c580-0e55-4f42-8594-11ccb584d633",
     "name": "Waterkin Shaman",
-    "legality": "Legal"
+    "legality": "Legal As Commander"
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
