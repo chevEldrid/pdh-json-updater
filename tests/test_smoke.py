@@ -63,9 +63,6 @@ TEST_CARDS: List[MockCard] = [
     MockCard(  # Legal in 99 despite being a commander
         name="Slippery Bogle", legality=Legality.LEGAL
     ),
-    MockCard(  # Legal only because of an MTGA printing
-        name="Waterkin Shaman", legality=Legality.LEGAL
-    ),
     MockCard(  # Legal only because of an MTGO printing
         name="Chainer's Edict", legality=Legality.LEGAL
     ),
@@ -99,6 +96,9 @@ TEST_CARDS: List[MockCard] = [
     MockCard( # Legal card type (Attraction)
         name="Clown Extruder", legality=Legality.LEGAL
     ),
+    MockCard( # Illegal due to Arena-specific downshift
+        name="Spiritual Guardian", legality=Legality.NOT_LEGAL
+    )
 ]
 
 
