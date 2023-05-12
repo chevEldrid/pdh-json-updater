@@ -13063,6 +13063,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "9f6fc734-4935-42d9-93a0-1b5ad8d8d277",
+    "name": "Coppercoat Vanguard",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3d2ea1a3-72af-48bc-a8f1-98facc2eebd0",
     "name": "Copperhorn Scout",
     "legality": "Legal"
@@ -15627,6 +15633,12 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "af231505-bd2e-4499-9fd5-f761dde2ecef",
     "name": "Death-Priest of Myrkul",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "bea40c67-73ca-4b5e-b902-5de07f21585c",
+    "name": "Death-Rattle Oni",
     "legality": "Legal As Commander"
   },
   {
@@ -28063,6 +28075,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "c27e2d6f-498c-42d8-aa1a-ac6402bf3f9a",
+    "name": "Gold-Forged Thopteryx",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "6ba7ab42-918e-472a-b364-06073cc354d2",
     "name": "Golden Bear",
     "legality": "Legal"
@@ -30238,6 +30256,12 @@
     "scryfallOracleId": "ad8fd4e9-f6ae-4f24-b806-4509c8f4ee47",
     "name": "Harmonious Emergence",
     "legality": "Legal"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "e1dd9dca-cb5f-46b4-b16d-a61ae651d653",
+    "name": "Harnessed Snubhorn",
+    "legality": "Legal As Commander"
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -36661,6 +36685,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "4c7e6520-d179-4590-afdc-92eb2c0740a6",
+    "name": "Kolaghan Warmonger",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "344dc8b0-302a-4721-99b6-5a6626a349c1",
     "name": "Koll, the Forgemaster",
     "legality": "Legal As Commander"
@@ -40462,6 +40492,12 @@
     "scryfallOracleId": "15c63f9b-d071-4522-b9f0-a1f441a61b81",
     "name": "Market Festival",
     "legality": "Legal"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "bafc2e11-5f1c-46f1-a852-2330e099b8e2",
+    "name": "Markov Baron",
+    "legality": "Legal As Commander"
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
