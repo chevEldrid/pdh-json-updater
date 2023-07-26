@@ -8,6 +8,8 @@ from pdh_json_updater.add_set import update_json_with_set
 
 SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
 ILLEGAL_SET_TYPES = ["alchemy", "token", "memorabilia"]
+# types of sets that would have prerelease events and therefore release early
+PRERELEASE_SET_TYPES = ["core", "expansion", "masters", "funny"]
 
 
 class SetcodeFetchResult:  # pylint: disable=too-few-public-methods
@@ -51,6 +53,9 @@ def fetch_setcodes_as_recent_as(
         ).replace(
             tzinfo=scryfall_release_date_timezone
         )  # We add info about time zone.
+        # if set would have a prerelease, its technically legal 7 days earlier than release
+        if card_set["set_type"] in PRERELEASE_SET_TYPES:
+            release_date = release_date - timedelta(days=7)
         if (
             release_date <= now
             and (earliest_allowed_date is None or earliest_allowed_date <= release_date)
