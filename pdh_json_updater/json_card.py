@@ -17,9 +17,15 @@ class JsonCard:  # pylint: disable=too-few-public-methods
     ILLEGAL_CARD_TYPES = ["Conspiracy"]
 
     def __init__(self, scryfall_queried_card):
-        self.scryfallOracleId: str = (  # pylint: disable=invalid-name
-            scryfall_queried_card["oracle_id"]
-        )
+
+        # some sl printings don't have oracle ids in scryfall...
+        if "oracle_id" in scryfall_queried_card:
+            self.scryfallOracleId: str = (  # pylint: disable=invalid-name
+                scryfall_queried_card["oracle_id"]
+            )
+        else:
+            self.scryfallOracleId: str = ""
+
         self.name: str = scryfall_queried_card["name"]
         self.legality = JsonCard.is_legal(scryfall_queried_card)
 
@@ -29,7 +35,12 @@ class JsonCard:  # pylint: disable=too-few-public-methods
         cls, scryfall_queried_card
     ):  # pylint: disable=too-many-return-statements
         """Get a MTG card's PDH legality"""
-        front_card_face_typeline = scryfall_queried_card["type_line"].split("//")[0]
+
+        if "type_line" in scryfall_queried_card:
+            front_card_face_typeline = scryfall_queried_card["type_line"].split("//")[0]
+        else:
+            front_card_face = scryfall_queried_card["card_faces"][0]
+            front_card_face_typeline = front_card_face["type_line"]
         # check for bannings
         if scryfall_queried_card["name"] in cls.PDH_BANLIST:
             return Legality.BANNED.value
