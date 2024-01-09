@@ -24,7 +24,8 @@ class JsonCard:  # pylint: disable=too-few-public-methods
                 scryfall_queried_card["oracle_id"]
             )
         else:
-            self.scryfallOracleId: str = ""
+            front_card_face = scryfall_queried_card["card_faces"][0]
+            self.scryfallOracleId: str = front_card_face["oracle_id"]
 
         self.name: str = scryfall_queried_card["name"]
         self.legality = JsonCard.is_legal(scryfall_queried_card)
