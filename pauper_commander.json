@@ -13039,12 +13039,6 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "",
-    "name": "Command Tower // Command Tower",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "1dc816b5-8918-4a0c-bb10-74abe579a98c",
     "name": "Command the Storm",
     "legality": "Legal"
@@ -25237,12 +25231,6 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "",
-    "name": "Forest // Forest",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0994d596-0b15-4156-8e94-5b566dcad6cd",
     "name": "Forest Bear",
     "legality": "Legal"
@@ -35605,12 +35593,6 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "",
-    "name": "Island // Island",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "7c1890cf-36db-4720-a472-9158bdc0d8aa",
     "name": "Isolation Zone",
     "legality": "Legal"
@@ -45127,12 +45109,6 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "",
-    "name": "Mountain // Mountain",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "e3638c54-e494-47d2-b614-94c9d9add85a",
     "name": "Mountain Bandit",
     "legality": "Legal"
@@ -51099,12 +51075,6 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
     "name": "Plains",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "",
-    "name": "Plains // Plains",
     "legality": "Legal"
   },
   {
@@ -68937,12 +68907,6 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
     "name": "Swamp",
-    "legality": "Legal"
-  },
-  {
-    "py/object": "pdh_json_updater.json_card.JsonCard",
-    "scryfallOracleId": "",
-    "name": "Swamp // Swamp",
     "legality": "Legal"
   },
   {
