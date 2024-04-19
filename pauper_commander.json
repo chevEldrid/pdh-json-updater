@@ -2185,6 +2185,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "14878a5f-7983-4133-a1a7-9d539531e092",
+    "name": "Angel of the Ruins",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "9e4db334-4698-4986-820f-1daf1bffda83",
     "name": "Angel's Herald",
     "legality": "Legal As Commander"
