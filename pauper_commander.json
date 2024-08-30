@@ -29971,6 +29971,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "79d99305-b3dd-4687-af69-bf4b28704aae",
+    "name": "Goblin Gang Leader",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "29781b19-0917-4d8f-abe3-df0b7e96d8a6",
     "name": "Goblin Gardener",
     "legality": "Legal"
