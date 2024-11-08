@@ -2215,6 +2215,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "48d14b5c-711a-4f8a-9de5-55415cb7a79a",
+    "name": "Angel of Finality",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "d12cf640-ff60-4935-a2c7-28ab788de42c",
     "name": "Angel of Light",
     "legality": "Legal As Commander"
@@ -10047,6 +10053,12 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0287d541-3f73-4c8b-9a77-87f99898758d",
     "name": "Bushmeat Poacher",
+    "legality": "Legal"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "c61374e5-a7f6-455e-a40b-a481751b536b",
+    "name": "Bushwhack",
     "legality": "Legal"
   },
   {
@@ -20781,6 +20793,12 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3d4a7dd3-9258-4bd1-adc4-08f0205e196a",
     "name": "Dwynen's Elite",
+    "legality": "Legal"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "30d0d75f-e94c-460b-b957-9f1d655c0f65",
+    "name": "Dwynen, Gilt-Leaf Daen",
     "legality": "Legal As Commander"
   },
   {
@@ -37399,6 +37417,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "7e86fb1e-9987-43ba-b59e-0cb03bbdedb6",
+    "name": "Involuntary Employment",
+    "legality": "Legal"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "abbfbe50-4caf-48d0-b8f1-f2c9212bcd2f",
     "name": "Iona's Judgment",
     "legality": "Legal"
@@ -46069,6 +46093,12 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "54866c25-b332-46c8-a2c5-1a71b702ddc0",
+    "name": "Mindsparker",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "338c06ec-47b5-47e7-9fe1-39ff381b36a5",
     "name": "Mindstab",
     "legality": "Legal"
@@ -53529,6 +53559,12 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0534e20d-8352-4d9f-a617-378070602673",
     "name": "Pileated Provisioner",
+    "legality": "Legal"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d13f0907-de39-4a90-940a-831740d7aa9b",
+    "name": "Pilfer",
     "legality": "Legal"
   },
   {
@@ -64977,6 +65013,12 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "bf7f5e9d-de3d-4a29-af25-f0b56336cecb",
     "name": "Shivan Branch-Burner",
+    "legality": "Legal As Commander"
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "711eea87-0fa3-46e0-a42b-fa5a86455f04",
+    "name": "Shivan Dragon",
     "legality": "Legal As Commander"
   },
   {
