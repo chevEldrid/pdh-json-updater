@@ -1,4 +1,5 @@
 """Test basic database card serialization functionality"""
+
 from typing import Dict, List
 
 from pdh_json_updater.file_handler import FileHandler
@@ -9,47 +10,74 @@ from pdh_json_updater.json_card import JsonCard
 class MockCard:  # pylint: disable=too-few-public-methods
     """Mock dataclass for cards stored in JSON database"""
 
-    def __init__(self, name, legality):
+    def __init__(self, name, legality, isPauperCommander=False):
         self.name: str = name
         self.legality: str = legality
+        self.isPauperCommander: bool = isPauperCommander
 
 
 TEST_CARDS: List[MockCard] = [
     MockCard(name="+2 Mace", legality=Legality.LEGAL),  # Common
     MockCard(  # Uncommon creature
-        name="Battle Cry Goblin", legality=Legality.LEGAL_AS_COMMANDER
+        name="Battle Cry Goblin", legality=Legality.NOT_LEGAL, isPauperCommander=True
     ),
-    MockCard(name="Ranger Class", legality=Legality.NOT_LEGAL),  # Rare
-    MockCard(name="Demilich", legality=Legality.NOT_LEGAL),  # Mythic rare
-    MockCard(name="Rhystic Study", legality=Legality.BANNED),  # Banned
-    MockCard(name="Mystic Remora", legality=Legality.BANNED),  # Banned
-    MockCard(name="Stone-Throwing Devils", legality=Legality.BANNED),  # Banned
-    MockCard(name="Pradesh Gypsies", legality=Legality.BANNED),  # Banned
-    MockCard(name="Tempest Efreet", legality=Legality.BANNED),  # Banned because of ante
-    MockCard(name="Dryad Arbor", legality=Legality.NOT_LEGAL),  # Land
+    MockCard(
+        name="Ranger Class", legality=Legality.NOT_LEGAL, isPauperCommander=False
+    ),  # Rare
+    MockCard(
+        name="Demilich", legality=Legality.NOT_LEGAL, isPauperCommander=False
+    ),  # Mythic rare
+    MockCard(
+        name="Rhystic Study", legality=Legality.BANNED, isPauperCommander=False
+    ),  # Banned
+    MockCard(
+        name="Mystic Remora", legality=Legality.BANNED, isPauperCommander=False
+    ),  # Banned
+    MockCard(
+        name="Stone-Throwing Devils", legality=Legality.BANNED, isPauperCommander=False
+    ),  # Banned
+    MockCard(
+        name="Pradesh Gypsies", legality=Legality.BANNED, isPauperCommander=False
+    ),  # Banned
+    MockCard(
+        name="Tempest Efreet", legality=Legality.BANNED, isPauperCommander=False
+    ),  # Banned because of ante
+    MockCard(
+        name="Dryad Arbor", legality=Legality.NOT_LEGAL, isPauperCommander=False
+    ),  # Land
     MockCard(  # Counter-balance to Dryad Arbor to make sure we aren't too restrictive
-        name="Akoum Warrior // Akoum Teeth", legality=Legality.LEGAL_AS_COMMANDER
+        name="Akoum Warrior // Akoum Teeth",
+        legality=Legality.NOT_LEGAL,
+        isPauperCommander=True,
     ),
     MockCard(  # Isn't a creature on front face
-        name="Autumnal Gloom // Ancient of the Equinox", legality=Legality.NOT_LEGAL
+        name="Autumnal Gloom // Ancient of the Equinox",
+        legality=Legality.NOT_LEGAL,
+        isPauperCommander=False,
     ),
     MockCard(  # Counter-balance to Autumnal Gloom to make sure we aren't too restrictive
-        name="Soul Seizer // Ghastly Haunting", legality=Legality.LEGAL_AS_COMMANDER
+        name="Soul Seizer // Ghastly Haunting",
+        legality=Legality.NOT_LEGAL,
+        isPauperCommander=True,
     ),
-    MockCard(name="Shrine Keeper", legality=Legality.NOT_LEGAL),  # Digital-only
+    MockCard(
+        name="Shrine Keeper", legality=Legality.NOT_LEGAL, isPauperCommander=False
+    ),  # Digital-only
     MockCard(  # Only physical printing is over-sized
-        name="Aswan Jaguar", legality=Legality.NOT_LEGAL
+        name="Aswan Jaguar", legality=Legality.NOT_LEGAL, isPauperCommander=False
     ),
     MockCard(  # Used to be legal as MTGO Promo
-        name="Spatial Contortion", legality=Legality.NOT_LEGAL
+        name="Spatial Contortion", legality=Legality.NOT_LEGAL, isPauperCommander=False
     ),
     MockCard(  # Used to be legal as MTGO Promo
-        name="Circle of Flame", legality=Legality.NOT_LEGAL
+        name="Circle of Flame", legality=Legality.NOT_LEGAL, isPauperCommander=False
     ),
     MockCard(  # Used to be legal as MTGO Promo
-        name="Hada Freeblade", legality=Legality.LEGAL_AS_COMMANDER
+        name="Hada Freeblade", legality=Legality.NOT_LEGAL, isPauperCommander=True
     ),
-    MockCard(name="Akoum", legality=Legality.NOT_LEGAL),  # Plane
+    MockCard(
+        name="Akoum", legality=Legality.NOT_LEGAL, isPauperCommander=False
+    ),  # Plane
     MockCard(name="Know Evil", legality=Legality.NOT_LEGAL),  # Scheme
     MockCard(name="Adriana's Valor", legality=Legality.NOT_LEGAL),  # Conspiracy
     MockCard(name="Boomflinger", legality=Legality.NOT_LEGAL),  # Contraption
@@ -66,39 +94,39 @@ TEST_CARDS: List[MockCard] = [
     MockCard(  # Legal only because of an MTGO printing
         name="Chainer's Edict", legality=Legality.LEGAL
     ),
-    MockCard(  # Legal only because of Renaissance
-        name="Ball Lightning", legality=Legality.LEGAL_AS_COMMANDER
+    MockCard(  # Not Legal because only in Renaissance
+        name="Ball Lightning", legality=Legality.NOT_LEGAL, isPauperCommander=False
     ),
-    MockCard(  # Legal only because of Renaissance
-        name="Cursed Rack", legality=Legality.LEGAL
+    MockCard(  # Not Legal because only in Renaissance
+        name="Cursed Rack", legality=Legality.NOT_LEGAL
     ),
     MockCard(  # Illegal because it cannot be included in a deck
         name="Swords to Plowshares", legality=Legality.NOT_LEGAL
     ),
-    MockCard ( # Legal As Commander Uncommon Background
-        name="Acolyte of Bahamut", legality=Legality.LEGAL_AS_COMMANDER
+    MockCard(  # Legal As Commander Uncommon Background
+        name="Acolyte of Bahamut", legality=Legality.NOT_LEGAL, isPauperCommander=True
     ),
-    MockCard ( # Legal in 99 Common Background
+    MockCard(  # Legal in 99 Common Background
         name="Candlekeep Sage", legality=Legality.LEGAL
     ),
-    MockCard( # Legal As Commander from Unset
-        name="Ambassador Blorpityblorpboop", legality=Legality.LEGAL_AS_COMMANDER
+    MockCard(  # Legal As Commander from Unset
+        name="Ambassador Blorpityblorpboop",
+        legality=Legality.NOT_LEGAL,
+        isPauperCommander=True,
     ),
-    MockCard( # Illegal Commander from Unset
+    MockCard(  # Illegal Commander from Unset
         name="Juggletron", legality=Legality.NOT_LEGAL
     ),
-    MockCard( # Legal in 99 from Unset
+    MockCard(  # Legal in 99 from Unset
         name="Croakid Amphibonaut", legality=Legality.LEGAL
     ),
-    MockCard( # Illegal in 99 from Unset
-        name="Bar Entry", legality=Legality.NOT_LEGAL
-    ),
-    MockCard( # Legal card type (Attraction)
+    MockCard(name="Bar Entry", legality=Legality.NOT_LEGAL),  # Illegal in 99 from Unset
+    MockCard(  # Legal card type (Attraction)
         name="Clown Extruder", legality=Legality.LEGAL
     ),
-    MockCard( # Illegal due to Arena-specific downshift
+    MockCard(  # Illegal due to Arena-specific downshift
         name="Spiritual Guardian", legality=Legality.NOT_LEGAL
-    )
+    ),
 ]
 
 
