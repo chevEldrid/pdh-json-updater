@@ -1,4 +1,5 @@
 """JSON database updating functions"""
+
 from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Optional
 
@@ -7,7 +8,7 @@ from pdh_json_updater.file_handler import FileHandler
 from pdh_json_updater.add_set import update_json_with_set
 
 SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
-ILLEGAL_SET_TYPES = ["alchemy", "token", "memorabilia"]
+ILLEGAL_SET_TYPES = ["alchemy", "token", "memorabilia", "promo"]
 # types of sets that would have prerelease events and therefore release early
 PRERELEASE_SET_TYPES = ["core", "expansion", "masters", "funny"]
 
@@ -105,9 +106,7 @@ def main():
     for code in codes_to_update:
         update_json_with_set(code, existing_json)
 
-    FileHandler.save_format_json_to_file(
-        existing_json, new_last_set_release_date
-    )
+    FileHandler.save_format_json_to_file(existing_json, new_last_set_release_date)
 
 
 main()

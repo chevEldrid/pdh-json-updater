@@ -1,4 +1,5 @@
 """Transforms a Scryfall card object into a json card object"""
+
 from pdh_json_updater.legality import Legality
 
 
@@ -29,6 +30,7 @@ class JsonCard:  # pylint: disable=too-few-public-methods
 
         self.name: str = scryfall_queried_card["name"]
         self.legality = JsonCard.is_legal(scryfall_queried_card)
+        self.isPauperCommander: bool = JsonCard.is_commander(scryfall_queried_card)
 
     # determines legality of a card based on rarity (legal, legal as commander, not legal) and banlist
     @classmethod
@@ -60,17 +62,31 @@ class JsonCard:  # pylint: disable=too-few-public-methods
         # check rarity
         if scryfall_queried_card["rarity"] == "common":
             return Legality.LEGAL.value
+        return Legality.NOT_LEGAL.value
+
+    # determines commander legality
+    @classmethod
+    def is_commander(
+        cls, scryfall_queried_card
+    ):  # pylint: disable=too-many-return-statements
+        """set a card as a legal commander"""
+
+        if "type_line" in scryfall_queried_card:
+            front_card_face_typeline = scryfall_queried_card["type_line"].split("//")[0]
+        else:
+            front_card_face = scryfall_queried_card["card_faces"][0]
+            front_card_face_typeline = front_card_face["type_line"]
         # check for backgrounds, Legal Enchantment Commanders
         if (
             scryfall_queried_card["rarity"] == "uncommon"
             and "Background" in front_card_face_typeline
         ):
-            return Legality.LEGAL_AS_COMMANDER.value
+            return True
         if (
             scryfall_queried_card["rarity"] == "uncommon"
             and "Creature" in front_card_face_typeline
         ):
             if "Land" in front_card_face_typeline:
-                return Legality.NOT_LEGAL.value
-            return Legality.LEGAL_AS_COMMANDER.value
-        return Legality.NOT_LEGAL.value
+                return False
+            return True
+        return False
