@@ -11,9 +11,8 @@ from pdh_json_updater.json_card import JsonCard
 # search for cards of rarity less than r and set of...
 SCRYFALL_SET_SEARCH_URL = "https://api.scryfall.com/cards/search?q=r%3Cr+set%3A{0}{1}"
 # looks like scryfall api responses don't include specific 'type', just 'type line' so we can parse each card to check or...only search good ones
-CARDTYPE_SEARCH_MODIFIER = (
-    "+in%3Apaper+(legal%3Avintage+OR+restricted%3Avintage+OR+banned%3Avintage)"
-)
+# Adding stickers to the top level here so I don't have to add manually
+CARDTYPE_SEARCH_MODIFIER = "+in%3Apaper+(legal%3Avintage+OR+restricted%3Avintage+OR+banned%3Avintage+OR+t%3AStickers)"
 
 
 def fetch_set(set_code: str) -> List:
@@ -39,7 +38,7 @@ def update_json_with_set(set_code: str, existing_commander_json: Dict[str, JsonC
     # transforms each card in mtg_set and adds them to a "format_additions" to be merged with master list
     for card in mtg_set:
         json_card = JsonCard(card)
-        card_name = json_card.name
+        card_oracle_id = json_card.scryfallOracleId
 
         # if this is first printing, add to list. If this is a reprint, requires a little extra checking
         # if card["reprint"]: <- much cleaner, but only works if sets added chronologically since first printing, reprint = false
@@ -47,15 +46,15 @@ def update_json_with_set(set_code: str, existing_commander_json: Dict[str, JsonC
             json_card.legality != Legality.NOT_LEGAL.value
             or json_card.isPauperCommander
         ):
-            if card_name in existing_commander_json:
-                prev_card_ruling = existing_commander_json[card_name]
+            if card_oracle_id in existing_commander_json:
+                prev_card_ruling = existing_commander_json[card_oracle_id]
                 if json_card.legality == Legality.LEGAL.value:
                     prev_card_ruling.legality = Legality.LEGAL.value
                 # update pauper commander status
                 if json_card.isPauperCommander:
                     prev_card_ruling.isPauperCommander = True
             else:
-                existing_commander_json[card_name] = json_card
+                existing_commander_json[card_oracle_id] = json_card
 
 
 # ------------------------

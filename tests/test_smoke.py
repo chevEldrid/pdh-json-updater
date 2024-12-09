@@ -127,18 +127,28 @@ TEST_CARDS: List[MockCard] = [
     MockCard(  # Illegal due to Arena-specific downshift
         name="Spiritual Guardian", legality=Legality.NOT_LEGAL
     ),
+    MockCard(  # Legal but keeps getting removed - check full_run_notes for details
+        name="Snowhorn Rider", legality=Legality.LEGAL
+    ),
+    MockCard(  # Legal as commander but ONE is weird, check full_run_notes for details
+        name="Blightbelly Rat", legality=Legality.LEGAL, isPauperCommander=True
+    ),
 ]
 
 
 def test_smoke():
     """Test basic database operations"""
-    existing_commander_json: Dict[str, JsonCard] = FileHandler.get_existing_json()
+    existing_commander_json: Dict[str, JsonCard] = FileHandler.get_existing_json_names()
     total_tests = len(TEST_CARDS)
     total_tests_passed = 0
 
     for card in TEST_CARDS:
         if card.name in existing_commander_json:
-            if card.legality.value == existing_commander_json[card.name].legality:
+            if (
+                card.legality.value == existing_commander_json[card.name].legality
+                and card.isPauperCommander
+                == existing_commander_json[card.name].isPauperCommander
+            ):
                 total_tests_passed += 1
             else:
                 print(

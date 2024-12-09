@@ -9,6 +9,8 @@ from pdh_json_updater.add_set import update_json_with_set
 
 SCRYFALL_SETS_SEARCH_URL = "https://api.scryfall.com/sets?order%3Dreleased"
 ILLEGAL_SET_TYPES = ["alchemy", "token", "memorabilia", "promo"]
+# sets to ignore, largely arena-only masters sets, and non-english releases
+ILLEGAL_SET_CODES = ["sir", "pio", "sis", "anb", "ren", "rin", "pwcs", "psal"]
 # types of sets that would have prerelease events and therefore release early
 PRERELEASE_SET_TYPES = ["core", "expansion", "masters", "funny"]
 
@@ -61,6 +63,7 @@ def fetch_setcodes_as_recent_as(
             release_date <= now
             and (earliest_allowed_date is None or earliest_allowed_date <= release_date)
             and card_set["set_type"] not in ILLEGAL_SET_TYPES
+            and card_set["code"] not in ILLEGAL_SET_CODES
         ):
             setcodes_to_load.append(card_set["code"])
             if last_set_release_date is None:

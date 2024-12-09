@@ -77,6 +77,8 @@ class JsonCard:  # pylint: disable=too-few-public-methods
             front_card_face = scryfall_queried_card["card_faces"][0]
             front_card_face_typeline = front_card_face["type_line"]
         # check for backgrounds, Legal Enchantment Commanders
+        if scryfall_queried_card["name"] in cls.PDH_BANLIST:
+            return False
         if (
             scryfall_queried_card["rarity"] == "uncommon"
             and "Background" in front_card_face_typeline

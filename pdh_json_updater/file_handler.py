@@ -1,4 +1,5 @@
 """File handlers classes"""
+
 from datetime import datetime, timezone
 import os
 import jsonpickle
@@ -18,6 +19,19 @@ class FileHandler:
     def get_existing_json(cls) -> Dict[str, JsonCard]:
         """Gets the JSON file storing legality information about all cards and returns a Dict[str, JsonCard].
         If the file doesn't exist, an empty dict is returned."""
+        existing_json: Dict[str, JsonCard] = {}
+        if os.path.exists(cls.RESULT_FILE):
+            with open(cls.RESULT_FILE, encoding="utf-8") as card_file:
+                data: List[JsonCard] = jsonpickle.decode(card_file.read())
+                for card in data:
+                    existing_json[card.scryfallOracleId] = card
+        return existing_json
+
+    @classmethod
+    def get_existing_json_names(cls) -> Dict[str, JsonCard]:
+        """Gets the JSON file storing legality information about all cards and returns a Dict[str, JsonCard].
+        If the file doesn't exist, an empty dict is returned. This particular one sorts by name for test ease
+        """
         existing_json: Dict[str, JsonCard] = {}
         if os.path.exists(cls.RESULT_FILE):
             with open(cls.RESULT_FILE, encoding="utf-8") as card_file:
