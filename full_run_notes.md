@@ -8,3 +8,5 @@ These could be caused by:
 
 - ONE had weird multi-rarity printings in the same set
 - KTK has a KTKy that might be mucking up specific printings
+
+Attractions are currently not included and will need to be added by hand.

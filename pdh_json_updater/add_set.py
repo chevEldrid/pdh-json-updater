@@ -12,7 +12,7 @@ from pdh_json_updater.json_card import JsonCard
 SCRYFALL_SET_SEARCH_URL = "https://api.scryfall.com/cards/search?q=r%3Cr+set%3A{0}{1}"
 # looks like scryfall api responses don't include specific 'type', just 'type line' so we can parse each card to check or...only search good ones
 # Adding stickers to the top level here so I don't have to add manually
-CARDTYPE_SEARCH_MODIFIER = "+in%3Apaper+(legal%3Avintage+OR+restricted%3Avintage+OR+banned%3Avintage+OR+t%3AStickers)"
+CARDTYPE_SEARCH_MODIFIER = "+in%3Apaper+(legal%3Avintage+OR+restricted%3Avintage+OR+banned%3Avintage+OR+t%3AStickers+OR+t%3Aattraction)"
 
 
 def fetch_set(set_code: str) -> List:
