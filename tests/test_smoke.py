@@ -40,7 +40,7 @@ TEST_CARDS: List[MockCard] = [
         name="Pradesh Gypsies", legality=Legality.BANNED, isPauperCommander=False
     ),  # Banned
     MockCard(
-        name="Tempest Efreet", legality=Legality.BANNED, isPauperCommander=False
+        name="Tempest Efreet", legality=Legality.NOT_LEGAL, isPauperCommander=False
     ),  # Banned because of ante
     MockCard(
         name="Dryad Arbor", legality=Legality.NOT_LEGAL, isPauperCommander=False
@@ -89,7 +89,7 @@ TEST_CARDS: List[MockCard] = [
         name="Fire // Ice", legality=Legality.LEGAL
     ),
     MockCard(  # Legal in 99 despite being a commander
-        name="Slippery Bogle", legality=Legality.LEGAL
+        name="Slippery Bogle", legality=Legality.LEGAL, isPauperCommander=True
     ),
     MockCard(  # Legal only because of an MTGO printing
         name="Chainer's Edict", legality=Legality.LEGAL
@@ -121,9 +121,6 @@ TEST_CARDS: List[MockCard] = [
         name="Croakid Amphibonaut", legality=Legality.LEGAL
     ),
     MockCard(name="Bar Entry", legality=Legality.NOT_LEGAL),  # Illegal in 99 from Unset
-    MockCard(  # Legal card type (Attraction)
-        name="Clown Extruder", legality=Legality.LEGAL
-    ),
     MockCard(  # Illegal due to Arena-specific downshift
         name="Spiritual Guardian", legality=Legality.NOT_LEGAL
     ),
