@@ -295,6 +295,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "3d02ee2f-b7bd-40b0-b9be-2420991b2be0",
+    "name": "Abzan Devotee",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "8b972819-507a-40a9-ab1f-1a674ea56083",
     "name": "Abzan Falconer",
     "legality": "Not Legal",
@@ -680,6 +687,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "fb49c7d2-d750-4676-b90e-76e7fae70a25",
+    "name": "Adorned Crocodile",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "c3dc6b0e-8790-4bd3-b166-63b2dc77488f",
     "name": "Adrenaline Jockey",
     "legality": "Not Legal",
@@ -754,6 +768,13 @@
     "name": "Aegis Automaton",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "3a75c56a-bdf7-490d-aa41-51d5eb8be46c",
+    "name": "Aegis Sculptor",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -1226,6 +1247,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "584fe1e4-029d-43fe-8c9e-6995dd392d65",
+    "name": "Agent of Kotis",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "632ccf7e-eaf4-42a6-9069-6ad915d03a5b",
     "name": "Agent of Masks",
     "legality": "Not Legal",
@@ -1263,6 +1291,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "d1c8f14b-7977-488a-8bd9-cefd6687f017",
     "name": "Aggressive Instinct",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "c469133e-174d-476b-b135-bbf15e415e72",
+    "name": "Aggressive Negotiations",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -1382,6 +1417,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "bf84a598-12d3-406d-8eeb-40592e782b87",
     "name": "Ainok Tracker",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "8134f3fd-197a-4b44-a370-311cc955dea3",
+    "name": "Ainok Wayfarer",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -1835,6 +1877,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "2844d274-cb60-46c1-a73b-e763c633e496",
+    "name": "Alchemist's Assistant",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "4e698713-6203-44f2-b438-1b26b951536d",
     "name": "Alchemist's Gift",
     "legality": "Legal",
@@ -1881,6 +1930,13 @@
     "name": "Alert Shu Infantry",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "c4229cc8-11e5-4221-b00d-86969701e21b",
+    "name": "Alesha's Legacy",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -3312,6 +3368,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "1175d482-d8a2-467f-bc50-2f4b241966bb",
+    "name": "Arashin Sunshield",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "75c81ce4-ca1d-464a-bb39-e568f8ebf71f",
     "name": "Arashin War Beast",
     "legality": "Not Legal",
@@ -3986,6 +4049,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3b93427c-5b40-4119-96ae-7dce3ca2bbb9",
     "name": "Armament Corps",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "23c75386-8011-4ee4-97e2-eaafeb20b788",
+    "name": "Armament Dragon",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -4828,6 +4898,13 @@
     "name": "Attune with Aether",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "f652c593-e8fa-42ff-a8b4-206556b273de",
+    "name": "Attuned Hunter",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -7110,6 +7187,13 @@
     "name": "Bear's Companion",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "963947d5-5fe4-49cd-be0c-0bdb5f7bcbb6",
+    "name": "Bearer of Glory",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -9871,6 +9955,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "449db6bf-d766-4d09-a7bd-9c45b3d4c4c3",
+    "name": "Bone-Cairn Butcher",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "c79cf0e5-52dd-4af3-ab06-6cdaab526c23",
     "name": "Bonebind Orator",
     "legality": "Legal",
@@ -10286,6 +10377,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "16df20e2-5228-4543-84b7-74a3170d9d31",
     "name": "Boulder Salvo",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "1654cab1-0697-4547-b1fe-2d0a61385199",
+    "name": "Boulderborn Dragon",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -13301,6 +13399,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
+    "name": "Caustic Exhale",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "032cc574-f7e7-4753-9a30-76cbd45d9563",
     "name": "Caustic Hound",
     "legality": "Legal",
@@ -13912,6 +14017,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "f688863f-b8eb-4143-8ea5-0b234cc91bd0",
     "name": "Champion of Arashin",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "0a427652-9745-4802-8c8f-5ae29a29b496",
+    "name": "Champion of Dusan",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -16577,6 +16689,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "abfb7234-c5cc-4e0b-9a67-d66473f918fc",
+    "name": "Constrictor Sage",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "a38b672f-4739-4b7e-8958-2a455510656e",
     "name": "Consul's Lieutenant",
     "legality": "Not Legal",
@@ -16857,6 +16976,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "6ff39311-565e-4414-b32b-eb24c70b3090",
+    "name": "Coordinated Maneuver",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "8ffbff60-a59d-4f71-864e-3c16cb61e43b",
     "name": "Copper Carapace",
     "legality": "Legal",
@@ -16985,6 +17111,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "66e37011-f3d2-41ed-8e09-7bba9464e8c3",
     "name": "Coretapper",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "322a2d97-cf71-4bfc-b52d-f642f2d0dcbd",
+    "name": "Cori Mountain Stalwart",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -18201,6 +18334,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "2e68e3f7-b168-4541-b8a0-791a8a6ebde8",
+    "name": "Cruel Truths",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "c1f1ca09-897a-434c-bbb1-e4ad4a1547aa",
     "name": "Cruel Witness",
     "legality": "Legal",
@@ -19099,6 +19239,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "18ae6be7-cfb6-42e3-a04e-99e9c1471ecd",
     "name": "Dalek Squadron",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "cdd1a043-bd47-4197-be26-e2f7d3f1d209",
+    "name": "Dalkovan Packbeasts",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -20896,6 +21043,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "8a64cf8e-ae7f-4697-93fc-9c946eb1088b",
+    "name": "Delta Bloodflies",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "edd531b9-f615-4399-8c8c-1c5e18c4acbf",
     "name": "Delver of Secrets // Insectile Aberration",
     "legality": "Legal",
@@ -21183,6 +21337,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ca773c52-ca64-463c-99cf-e71b59d2cff7",
+    "name": "Descendant of Storms",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3c9242fd-915b-4f6d-b4ee-830c9d80c9e8",
     "name": "Desecrated Earth",
     "legality": "Legal",
@@ -21467,6 +21628,13 @@
     "name": "Devoted Druid",
     "legality": "Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "f7620c46-b3d8-4694-ac7c-a43933c86c22",
+    "name": "Devoted Duelist",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -21946,6 +22114,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "23cda76b-6e47-4922-a38d-93f7aae1eb00",
+    "name": "Dirgur Island Dragon // Skimming Strike",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "c08b444b-6617-4199-b9da-5d4e81cd7597",
     "name": "Dirgur Nemesis",
     "legality": "Legal",
@@ -22219,6 +22394,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "dd3a4b64-0987-4e9b-a18d-c54365438857",
+    "name": "Dispelling Exhale",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "aefb1463-76fb-419e-8cda-8c5bfb88a3d2",
     "name": "Dispersal Shield",
     "legality": "Legal",
@@ -22286,6 +22468,13 @@
     "name": "Disruptive Pitmage",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ec74ae5d-1284-443c-9842-18954f8cf5a8",
+    "name": "Disruptive Stormbrood // Petty Revenge",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -22940,6 +23129,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "913dbce2-6805-453f-a9c3-64f1cc658627",
+    "name": "Dragon Sniper",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "328a0691-9453-4f2d-a9c3-5c69da252d20",
     "name": "Dragon Trainer",
     "legality": "Not Legal",
@@ -23010,6 +23206,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "86cb340f-ef06-4be9-b457-703784387dbe",
+    "name": "Dragon's Prey",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0c016ccc-a341-4b76-87ba-69c639d2746d",
     "name": "Dragon's Rage Channeler",
     "legality": "Not Legal",
@@ -23019,6 +23222,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "2f6f49a4-f2ea-4147-a6d3-69cf875c302e",
     "name": "Dragon-Scarred Bear",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "7875c063-19c3-4e6e-81d8-1a378a4e16e5",
+    "name": "Dragonback Lancer",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -23077,6 +23287,20 @@
     "name": "Dragonstalker",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "02de8fa3-ac8d-47e5-b137-d5a0b7d8e951",
+    "name": "Dragonstorm Forecaster",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "f6de5bd7-7704-4a0c-a27a-9e565e49f5e9",
+    "name": "Dragonstorm Globe",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -24347,6 +24571,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "387b12b1-d8f5-487b-972f-5303b23eed5a",
+    "name": "Dusyut Earthcarver",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "e9195f10-8cc2-482a-9e28-0be9a37099b4",
     "name": "Dutiful Attendant",
     "legality": "Legal",
@@ -25044,6 +25275,13 @@
     "name": "Eerie Soultender",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "185e0892-194f-43ac-853f-1e142bf8476e",
+    "name": "Effortless Master",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -25852,6 +26090,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "b5208c2c-b839-42f6-8717-ee4bbaf1385b",
+    "name": "Embermouth Sentinel",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "e16cec8b-e0ac-44ee-91cf-658e204ca120",
     "name": "Embersmith",
     "legality": "Not Legal",
@@ -26542,6 +26787,13 @@
     "name": "Equestrian Skill",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "42bf9435-02e6-428f-a93c-fe4652deb4fc",
+    "name": "Equilibrium Adept",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -29212,6 +29464,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "1722f814-2d4e-4d59-9b74-10ef8e89def9",
+    "name": "Feral Deathgorger // Dusk Sight",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "c3b8ea58-d84f-4c60-9f72-e4ec389eb93c",
     "name": "Feral Deceiver",
     "legality": "Legal",
@@ -29975,6 +30234,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "89fb21dc-4cf2-4c9a-b0ae-cc6e10277fb6",
+    "name": "Fire-Rim Form",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "aa7714b0-2bfb-458a-8ebf-37ec2c53383e",
     "name": "Fireball",
     "legality": "Legal",
@@ -30710,6 +30976,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d6d9b5d2-0ab6-4637-a468-5149b7c7d0cf",
+    "name": "Fleeting Effigy",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "6336401f-4e2d-4ebe-8c5b-24aa6f516abf",
     "name": "Fleeting Flight",
     "legality": "Legal",
@@ -31242,6 +31515,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "695a84b5-96b0-4e48-b615-15624efab3b7",
+    "name": "Focus the Mind",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "feb34b5a-d51e-42d7-90c6-c5c84ff00c4e",
     "name": "Fodder Tosser",
     "legality": "Legal",
@@ -31697,6 +31977,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "82f59ac4-bf94-4fa2-9457-f0bec8360bd9",
+    "name": "Formation Breaker",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "ddbe6d9b-ea69-449c-a765-b3c16ff60c08",
     "name": "Formless Nurturing",
     "legality": "Legal",
@@ -31778,6 +32065,13 @@
     "name": "Fortress Cyclops",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "fa3ed0f6-e44e-433d-80d3-824de5e6135a",
+    "name": "Fortress Kin-Guard",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -32667,6 +32961,13 @@
     "name": "Furious Bellow",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "4fb1d33f-a87d-46cf-a73e-882c3dbcb26f",
+    "name": "Furious Forebear",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -38788,6 +39089,20 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "fde50a0d-9bc6-45f4-873e-3de81a513fac",
+    "name": "Gurmag Nightwatch",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "2be43acc-a815-44bc-8803-d702e553fbc1",
+    "name": "Gurmag Rakshasa",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "fc1256e9-eb92-43b6-abfc-ce19d910a929",
     "name": "Gurmag Swiftwing",
     "legality": "Not Legal",
@@ -39415,6 +39730,13 @@
     "name": "Hardened Escort",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ca1dc6f0-3ec2-4f62-a08a-1395201bd93f",
+    "name": "Hardened Tactician",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -40608,6 +40930,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "09955b4b-6052-4c27-8b63-9548482b3c5c",
+    "name": "Heritage Reclamation",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "792d7818-ee5c-4254-b969-7b50f475c629",
     "name": "Hermetic Study",
     "legality": "Legal",
@@ -40974,6 +41303,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "fc8c54c4-a436-43cc-888b-f4ba3e751c16",
     "name": "Highspire Artisan",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "6d2d250b-cdce-4075-8724-b52ad31664fb",
+    "name": "Highspire Bell-Ringer",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -41826,6 +42162,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "3431338b-928a-47f2-bc2f-f3c5d8eda8d0",
+    "name": "Host of the Hereafter",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "e050a0a3-f48e-4cba-9cd4-692a92261c9f",
     "name": "Hostile Minotaur",
     "legality": "Legal",
@@ -42127,6 +42470,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "013bcab8-e527-4700-82c9-4cb9cb8a4807",
+    "name": "Humbling Elder",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "395922cc-d524-4241-a7d8-9c7959f0b9db",
     "name": "Humongulus",
     "legality": "Legal",
@@ -42136,6 +42486,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "dd4f3a78-3167-42d0-8334-5ac36750a253",
     "name": "Hunding Gjornersen",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "9ed6aa5b-4369-42f7-9853-aae1ac9b17e2",
+    "name": "Hundred-Battle Veteran",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -42661,6 +43018,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "8c0a6ac1-b1cc-405a-95fb-f06b7fecbb54",
     "name": "Icequake",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "53f07529-c212-43e4-b5b6-086efeadda39",
+    "name": "Iceridge Serpent",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -44157,6 +44521,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "db756a16-3db6-4bde-bbc2-ecee3ee9d9d3",
+    "name": "Inspirited Vanguard",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0040db73-ac11-4c15-a1ac-5a2c4c085f09",
     "name": "Instill Infection",
     "legality": "Legal",
@@ -44467,6 +44838,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3270265f-fa9f-4ef0-a1a3-a68fc2349bf1",
     "name": "Iridescent Hornbeetle",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ce09c5b0-9dd4-4f73-9f3f-dfbd829813e4",
+    "name": "Iridescent Tiger",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -45053,6 +45431,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "985192cd-ceb6-48ad-80b9-e10fc544260e",
+    "name": "Jade-Cast Sentinel",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "9290f549-3e5d-4e39-a20e-8be6b674abc7",
     "name": "Jadecraft Artisan",
     "legality": "Legal",
@@ -45277,6 +45662,20 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "eff690a7-c2c7-4750-894c-0667d3151165",
+    "name": "Jeskai Brushmaster",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "6dcdd313-6df7-4d44-a4cb-0346a4fdb4e1",
+    "name": "Jeskai Devotee",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "dfbd5ad1-0f68-4219-95c4-98f674f321be",
     "name": "Jeskai Elder",
     "legality": "Legal",
@@ -45295,6 +45694,13 @@
     "name": "Jeskai Sage",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "bb50b4f4-f0da-4283-821b-6d74bd20752f",
+    "name": "Jeskai Shrinekeeper",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -46257,6 +46663,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "41129dc1-be88-4198-94f9-032817a79bc7",
+    "name": "Karakyk Guardian",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "e8cf80a1-6908-4adb-88e7-2015672d4905",
     "name": "Karametra's Acolyte",
     "legality": "Not Legal",
@@ -47034,6 +47447,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "aef4ab0e-c81f-428c-ab23-64504a9fb989",
+    "name": "Kheru Goldkeeper",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "d3278ddb-c198-450d-946e-8547e5c96dd1",
     "name": "Kick in the Door",
     "legality": "Legal",
@@ -47101,6 +47521,13 @@
     "name": "Kiln Walker",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ad28a1f9-8893-4693-9464-c32ed760f6b1",
+    "name": "Kin-Tree Nurturer",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -47290,6 +47717,20 @@
     "name": "Kirtar's Desire",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "a3275d80-112b-4839-a014-e44ef48d2e6b",
+    "name": "Kishla Skimmer",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "09277185-fccd-4747-aa79-f569c581022a",
+    "name": "Kishla Trawlers",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -48420,6 +48861,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "33117d34-ea70-4566-92a3-5dec9bfe529a",
+    "name": "Krotiq Nestguard",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "43e6fc44-8b23-4bff-91da-936019efe84b",
     "name": "Krovikan Elementalist",
     "legality": "Not Legal",
@@ -48473,6 +48921,13 @@
     "name": "Krumar Bond-Kin",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "65a7fb13-77b9-44ea-9e0e-34daef82eb69",
+    "name": "Krumar Initiate",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -49988,6 +50443,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "601b7481-19fc-4779-950e-883a9a22aec3",
+    "name": "Lightfoot Technique",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "7f31aa43-cf75-4488-b47f-e16e923a2d01",
     "name": "Lightkeeper of Emeria",
     "legality": "Not Legal",
@@ -51119,6 +51581,13 @@
     "name": "Loxodon Anchorite",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "8cf4ddb0-2a83-4d8f-b636-7ba3c81ea4ca",
+    "name": "Loxodon Battle Priest",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -52669,6 +53138,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "24ee57b5-a505-4264-97ca-8b8dfb12298e",
+    "name": "Mardu Devotee",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "acff2573-cf8a-4aee-96a3-28721a4128f6",
     "name": "Mardu Hateblade",
     "legality": "Legal",
@@ -52944,6 +53420,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "9ad01fb2-2ba7-447a-a5ef-e57d46421635",
     "name": "Marshal of Zhalfir",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "af762373-e159-4a36-83b5-a82b8b16fa41",
+    "name": "Marshal of the Lost",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -54176,6 +54659,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0c3c3bcc-d485-4a01-92fe-8bf29c0fc926",
     "name": "Meteorite",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "2b2b3b16-389c-4581-b889-b8a2e76f83a2",
+    "name": "Meticulous Artisan",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -55700,6 +56190,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "82aa1402-4b1c-4343-aba5-dd3271cc1ac5",
+    "name": "Molten Exhale",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "7c72df45-c3bd-4fb9-8365-5a5639566742",
     "name": "Molten Frame",
     "legality": "Legal",
@@ -55842,6 +56339,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "1c8ef715-3c3c-4d04-9f30-941b870b11d3",
     "name": "Monastery Loremaster",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "325b88e1-ec7f-4d22-887c-a7f18a868bb0",
+    "name": "Monastery Messenger",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -57464,6 +57968,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "247075c5-62f8-41a1-91b3-562ff0aabb30",
+    "name": "Narset's Rebuke",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "16acd858-dba6-401e-bbfb-cabdd6d0120e",
     "name": "Narstad Scrapper",
     "legality": "Legal",
@@ -58467,6 +58978,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "d12b875c-0056-4a57-a7ff-09c73d00f8cc",
     "name": "Nightbird's Clutches",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "36d04190-7ce3-431a-b18e-3a1895ec6fc7",
+    "name": "Nightblade Brigade",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -61174,6 +61692,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "8d84a706-080c-4fb2-b1b9-3dbb3294fb7b",
+    "name": "Osseous Exhale",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "33c3a81a-6cea-48c9-b966-67084d96e74f",
     "name": "Osseous Sticktwister",
     "legality": "Not Legal",
@@ -63393,6 +63918,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ea96fe35-88ed-432b-a495-08e787d23d0b",
+    "name": "Piercing Exhale",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "2a6c7826-dcfe-4029-894e-6c82c4dd84b7",
     "name": "Piercing Light",
     "legality": "Legal",
@@ -64179,6 +64711,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "aff9a568-2848-4614-a28b-b1ea84f7f0b7",
     "name": "Pointed Discussion",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "e08debdc-2db5-4562-8a02-4158bfc0db88",
+    "name": "Poised Practitioner",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -65738,6 +66277,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "5e8086d5-ea48-4555-b65a-a33d08ba4afd",
+    "name": "Purging Stormbrood // Absorb Essence",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "a45762af-4aac-40b3-a983-ea441b04c5ee",
     "name": "Purifying Dragon",
     "legality": "Not Legal",
@@ -66916,6 +67462,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "79bf98c8-1169-477d-838e-2ebc0fa396dc",
     "name": "Rainbow Crow",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "6ccf72ee-a86a-4b13-9e76-e308d0d28523",
+    "name": "Rainveil Rejuvenator",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -68132,6 +68685,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "4f3d7102-f8ce-42d4-94eb-f69b695773d1",
+    "name": "Rebellious Strike",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "cf35ec1e-11e2-4028-89df-9755fd6772bf",
     "name": "Rebuke",
     "legality": "Legal",
@@ -68685,6 +69245,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "b8c5e481-371c-4999-bb2c-347a2aa33171",
+    "name": "Reigning Victor",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "8916b3d4-6a9a-420a-8ee7-be67b2f47201",
     "name": "Reinforced Bulwark",
     "legality": "Legal",
@@ -69133,6 +69700,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "62f09a5b-d7fb-44f4-9fab-719185b735ab",
+    "name": "Reputable Merchant",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3f487c8e-a923-4031-b0a7-04f778544fe0",
     "name": "Rescind",
     "legality": "Legal",
@@ -69142,6 +69716,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "f0ae687a-7222-4521-a514-ba10373fed7e",
     "name": "Rescue",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d70ad04a-b940-4bb1-bcdc-408166e91723",
+    "name": "Rescue Leopard",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -70029,6 +70610,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "1fc31651-70fe-4a58-9b7e-7359510bba51",
+    "name": "Riling Dawnbreaker // Signaling Roar",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "57f6a8c2-9d84-4640-9b92-8b8611e05773",
     "name": "Rilsa Rael, Kingpin",
     "legality": "Not Legal",
@@ -70101,6 +70689,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "24db950b-e4fe-42d0-977b-4957eb8229d9",
     "name": "Rimrock Knight // Boulder Rush",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "334ffdc4-9fe6-4a7f-bf5d-bcd88adab715",
+    "name": "Ringing Strike Mastery",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -70526,6 +71121,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "a123aab8-3f3a-4187-abcb-21a99dcf13bb",
+    "name": "Riverwalk Technique",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "f9221367-24a5-41a3-8943-c6a3cb5d605d",
     "name": "Riverwheel Aerialists",
     "legality": "Legal",
@@ -70572,6 +71174,13 @@
     "name": "Rix Maadi Guildmage",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "cf2355f3-11d2-4b03-b663-9fad6b07e4b2",
+    "name": "Roamer's Routine",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -71765,6 +72374,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "af7db15c-93af-4c7e-a028-42181d91a923",
+    "name": "Runescale Stormbrood // Chilling Screech",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "964c2003-cef0-4ac7-9f66-4e20893c8e50",
     "name": "Runesword",
     "legality": "Legal",
@@ -72353,6 +72969,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d6eb2bfc-1e86-4e36-9d48-12de16955b98",
+    "name": "Sage of the Fang",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "359a570e-92a7-4954-9a05-89cc75df57e7",
     "name": "Sage of the Unknowable",
     "legality": "Legal",
@@ -72397,6 +73020,20 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "cf8a8482-e243-4155-bc21-a1e474c6f1e7",
     "name": "Sagu Archer",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "00f1d167-c143-471d-bd52-da2a65d087c4",
+    "name": "Sagu Pummeler",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "7cee6d43-5dec-4989-85ec-c635ec783ec7",
+    "name": "Sagu Wildling // Roost Seek",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -72476,6 +73113,13 @@
     "name": "Salt Road Ambushers",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "50261b9d-48f2-4bad-a35b-14f13b3cdd32",
+    "name": "Salt Road Packbeast",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -72794,6 +73438,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "eae480fe-d9fe-4dbe-8b78-b65f398b0af3",
+    "name": "Sandskitter Outrider",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "1dce1f39-eacb-4d29-899b-55569284c7ed",
     "name": "Sandsower",
     "legality": "Not Legal",
@@ -73069,6 +73720,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3313aa8f-6441-4daa-b8fa-e6144f60bea8",
     "name": "Sarkhan's Rage",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "30f058f8-5777-4c25-b881-8f1d0ce17d3a",
+    "name": "Sarkhan's Resolve",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -75181,6 +75839,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d0458ffe-9a61-443f-8e80-3d2dde224a4d",
+    "name": "Seize Opportunity",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "f6653d90-cd30-4b2b-9592-97d5769dc3d8",
     "name": "Seize the Initiative",
     "legality": "Legal",
@@ -77071,6 +77736,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "8676e917-17dd-4047-99c4-402f2e909e16",
+    "name": "Shock Brigade",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "fdf2a8da-2933-44c5-b483-f035144da752",
     "name": "Shock Troops",
     "legality": "Legal",
@@ -77082,6 +77754,13 @@
     "name": "Shocking Grasp",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "fbb7735f-ec91-4ed4-b735-d94a76e68a80",
+    "name": "Shocking Sharpshooter",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -77451,6 +78130,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "7fa1430f-cd2e-4071-a161-e32a61e33714",
     "name": "Sibling Rivalry",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "5b51958d-533a-45e4-aac1-3c157670978b",
+    "name": "Sibsig Appraiser",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -78711,6 +79397,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "cbcf6924-3e97-4940-867a-3cedd4052c9f",
     "name": "Skirk Volcanist",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "40eb7f43-7cee-41a1-a4d1-f34ee125ccd1",
+    "name": "Skirmish Rhino",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -80515,6 +81208,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "b25ccb64-e114-4d54-a07a-c8cd4560b511",
+    "name": "Snowmelt Stag",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "fc8d3933-f7fe-4849-aae7-737ce6f067de",
     "name": "Snubhorn Sentry",
     "legality": "Legal",
@@ -80960,6 +81660,13 @@
     "name": "Sonic Seizure",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d317e3f1-553f-44f6-8543-d6d4c42534ad",
+    "name": "Sonic Shrieker",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -83448,6 +84155,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "45392882-e4b9-4c74-a10f-985c2b4e2be9",
+    "name": "Stalwart Successor",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "b6b4c459-9c8b-4b95-8706-05d972b8daea",
     "name": "Stalwart Valkyrie",
     "legality": "Legal",
@@ -83634,6 +84348,13 @@
     "name": "Starnheim Courser",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "04e615e6-4088-4170-904c-f2d4bcebed59",
+    "name": "Starry-Eyed Skyrider",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -84799,6 +85520,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "4ad9c550-5605-4ffe-8e27-e9f2d9ada000",
+    "name": "Stormplain Detainment",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "2c378f72-917c-49d4-ba68-51ebaf18d976",
     "name": "Stormrider Spirit",
     "legality": "Legal",
@@ -84822,6 +85550,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "a8f5a11f-3291-4ee9-a96d-4fa38af14932",
     "name": "Stormscape Familiar",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "e24916ff-7566-4f27-8e31-732311a4a88c",
+    "name": "Stormshriek Feral // Flush Out",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -85520,6 +86255,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ee7b3fc0-6128-4bf6-b3e7-7371e6f93c4b",
+    "name": "Sultai Devotee",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0274f286-46a1-4028-878a-88c2146a895c",
     "name": "Sultai Emissary",
     "legality": "Legal",
@@ -85594,6 +86336,13 @@
     "name": "Summit Apes",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "b772d35a-d365-47ce-b1dd-a2ba574c74ea",
+    "name": "Summit Intimidator",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -85835,6 +86584,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "f17b9356-a329-4f89-b690-afc2eaff4977",
+    "name": "Sunpearl Kirin",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "0718ea67-ced3-46bc-9164-8841e6bd73ae",
     "name": "Sunrise Cavalier",
     "legality": "Not Legal",
@@ -85886,6 +86642,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3518e273-bd92-46bc-b361-da52c670dfe1",
     "name": "Sunseed Nurturer",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d81ade13-e7c7-4fe3-bb0c-5007ed9f1198",
+    "name": "Sunset Strikemaster",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -87837,6 +88600,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "7423b3b9-56eb-4cf2-8ada-135918219c4b",
+    "name": "Tempest Hawk",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "dfd2bc6e-32c8-4027-9c0d-8a3050b8eeda",
     "name": "Tempest Owl",
     "legality": "Legal",
@@ -87949,6 +88719,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "e444f072-ce24-4fd1-99eb-d20d12bc119a",
+    "name": "Temur Devotee",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "590c2455-90f7-4ff6-a6cf-5d0d25575cda",
     "name": "Temur Runemark",
     "legality": "Legal",
@@ -87960,6 +88737,13 @@
     "name": "Temur Sabertooth",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "889d26d6-9e6c-4cc0-8e8e-dd932f705a20",
+    "name": "Temur Tawnyback",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -90945,6 +91729,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "95d51048-be32-4c5f-8b75-fca3a891c9d6",
+    "name": "Trade Route Envoy",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "888f58c0-1860-4df4-ad75-53e634150680",
     "name": "Tragic Banshee",
     "legality": "Not Legal",
@@ -91285,6 +92076,13 @@
     "name": "Traveler's Cloak",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "14934ab0-41ab-44f8-bb28-2b0457eb6f5f",
+    "name": "Traveling Botanist",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -92289,6 +93087,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ff812a78-3fe7-47bc-9984-1c2380cff5b1",
+    "name": "Twinmaw Stormbrood // Charring Bite",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "378110e9-62d6-4dcf-a2e3-813081c82ec4",
     "name": "Twins of Maurer Estate",
     "legality": "Legal",
@@ -92681,6 +93486,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "75da657e-0e36-4f2a-9b81-b7eba7d8e050",
+    "name": "Unburied Earthcarver",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "7aac51ef-ae03-4a9e-9a48-46223787f291",
     "name": "Uncaged Fury",
     "legality": "Legal",
@@ -92919,8 +93731,22 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "3740b86d-b0e6-4837-b408-e7f62b95c787",
+    "name": "Underfoot Underdogs",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "f125b6b0-c5ff-44d1-bf99-ebc537d37fc3",
     "name": "Undergrowth",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "511fa8a3-0a65-47fc-9f3b-57eaef2698cd",
+    "name": "Undergrowth Leopard",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -93026,6 +93852,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "3066802a-35d0-4e07-99e2-b495398d88b6",
     "name": "Unearthly Blizzard",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "c5da5c31-0cf1-4393-8701-eda7880ecebc",
+    "name": "Unending Whisper",
     "legality": "Legal",
     "isPauperCommander": false
   },
@@ -93304,6 +94137,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "de5c6c9d-04a2-4287-8c6e-fdf56c411507",
+    "name": "Unrooted Ancestor",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "b2b0a5d0-0084-43a4-b6dc-e893ef42cdb7",
     "name": "Unruly Catapult",
     "legality": "Legal",
@@ -93357,6 +94197,13 @@
     "name": "Unsettling Twins",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "0a56a33b-033f-4398-8dc1-e531be059710",
+    "name": "Unsparing Boltcaster",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -94564,6 +95411,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "4aff2f31-619f-406e-b2c9-a2c733c04bc4",
+    "name": "Venerated Stormsinger",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "be118a2d-a27e-4174-86db-d9a2d304da2f",
     "name": "Venerated Teacher",
     "legality": "Legal",
@@ -94953,6 +95807,13 @@
     "name": "Veteran Guardmouse",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "ccaadf8d-22c0-4139-b734-03ac2fcb4494",
+    "name": "Veteran Ice Climber",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -97959,6 +98820,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "b30eafed-2755-4423-9592-c8b83c68804b",
+    "name": "Watcher of the Wayside",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "9ac46f46-3099-4ad9-ae58-bf25d7270e87",
     "name": "Watchers of the Dead",
     "legality": "Not Legal",
@@ -98208,6 +99076,13 @@
     "name": "Waylaying Pirates",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "b93eaf66-91b3-44da-851c-79810901be0c",
+    "name": "Wayspeaker Bodyguard",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -98743,6 +99618,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "4fbfc814-df10-4d61-ada9-c96cc8ee8d8c",
+    "name": "Whirlwing Stormbrood // Dynamic Soar",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "ac141fe0-328a-4d9b-8048-b0c47f399587",
     "name": "Whisk Away",
     "legality": "Legal",
@@ -99132,6 +100014,13 @@
     "name": "Wild Ox",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "61978202-538b-4f92-acfc-e95f4a6ce466",
+    "name": "Wild Ride",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -99555,6 +100444,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "c566317e-cd82-46c1-b506-f41256d815f6",
+    "name": "Wingblade Disciple",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "55d1f44f-8554-49e7-b36f-92682926e6d0",
     "name": "Wingcrafter",
     "legality": "Legal",
@@ -99657,6 +100553,13 @@
     "name": "Wingspan Mentor",
     "legality": "Not Legal",
     "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "e75cee5d-ab02-4227-b36e-61c5d2f564a8",
+    "name": "Wingspan Stride",
+    "legality": "Legal",
+    "isPauperCommander": false
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
@@ -100444,6 +101347,13 @@
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "0f8ebf11-b5ec-4f21-8c49-90d569b5a4c5",
+    "name": "Worthy Cost",
+    "legality": "Legal",
+    "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "eb2ff7f2-b7fd-4984-a4e8-cf57b619c1a5",
     "name": "Wose Pathfinder",
     "legality": "Legal",
@@ -100803,6 +101713,13 @@
     "py/object": "pdh_json_updater.json_card.JsonCard",
     "scryfallOracleId": "30868d69-2ba3-4373-9d47-4bc8978f35d1",
     "name": "Yarok's Wavecrasher",
+    "legality": "Not Legal",
+    "isPauperCommander": true
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "2321b4fc-6b73-4d1a-84cc-13524adb0899",
+    "name": "Yathan Tombguard",
     "legality": "Not Legal",
     "isPauperCommander": true
   },
@@ -101722,6 +102639,13 @@
     "name": "Zuran Spellcaster",
     "legality": "Legal",
     "isPauperCommander": false
+  },
+  {
+    "py/object": "pdh_json_updater.json_card.JsonCard",
+    "scryfallOracleId": "d6fdfd94-cef5-482c-83ed-11c5ba40abe9",
+    "name": "Zurgo's Vanguard",
+    "legality": "Not Legal",
+    "isPauperCommander": true
   },
   {
     "py/object": "pdh_json_updater.json_card.JsonCard",
