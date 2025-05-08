@@ -74,6 +74,10 @@ class FileHandler:
         format_list = list(updated_format_json.values())
         format_list.sort(key=lambda x: x.name, reverse=False)
 
+        # Configure jsonpickle to use a more standard JSON format
+        jsonpickle.set_encoder_options('json', sort_keys=True, indent=2)
+        jsonpickle.set_preferred_backend('json')
+
         with open(cls.RESULT_FILE, "w", encoding="utf-8") as output_file:
             full_json_text = jsonpickle.encode(
                 value=format_list, indent=2, separators=(",", ": ")
