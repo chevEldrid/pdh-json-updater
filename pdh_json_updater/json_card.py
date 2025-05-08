@@ -18,7 +18,6 @@ class JsonCard:  # pylint: disable=too-few-public-methods
     ILLEGAL_CARD_TYPES = ["Conspiracy"]
 
     def __init__(self, scryfall_queried_card):
-
         # some sl printings don't have oracle ids in scryfall...
         if "oracle_id" in scryfall_queried_card:
             self.scryfallOracleId: str = (  # pylint: disable=invalid-name
@@ -31,6 +30,15 @@ class JsonCard:  # pylint: disable=too-few-public-methods
         self.name: str = scryfall_queried_card["name"]
         self.legality = JsonCard.is_legal(scryfall_queried_card)
         self.isPauperCommander: bool = JsonCard.is_commander(scryfall_queried_card)
+
+    def to_json(self):
+        """Custom JSON serialization method"""
+        return {
+            "scryfallOracleId": self.scryfallOracleId,
+            "name": self.name,
+            "legality": self.legality,
+            "isPauperCommander": self.isPauperCommander
+        }
 
     # determines legality of a card based on rarity (legal, legal as commander, not legal) and banlist
     @classmethod

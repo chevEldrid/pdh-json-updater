@@ -2,7 +2,7 @@
 
 from datetime import datetime, timezone
 import os
-import jsonpickle
+import json
 from typing import List, Dict, Optional
 
 from pdh_json_updater.json_card import JsonCard
@@ -22,8 +22,13 @@ class FileHandler:
         existing_json: Dict[str, JsonCard] = {}
         if os.path.exists(cls.RESULT_FILE):
             with open(cls.RESULT_FILE, encoding="utf-8") as card_file:
-                data: List[JsonCard] = jsonpickle.decode(card_file.read())
-                for card in data:
+                data: List[Dict] = json.load(card_file)
+                for card_data in data:
+                    card = JsonCard.__new__(JsonCard)
+                    card.scryfallOracleId = card_data["scryfallOracleId"]
+                    card.name = card_data["name"]
+                    card.legality = card_data["legality"]
+                    card.isPauperCommander = card_data["isPauperCommander"]
                     existing_json[card.scryfallOracleId] = card
         return existing_json
 
@@ -35,8 +40,13 @@ class FileHandler:
         existing_json: Dict[str, JsonCard] = {}
         if os.path.exists(cls.RESULT_FILE):
             with open(cls.RESULT_FILE, encoding="utf-8") as card_file:
-                data: List[JsonCard] = jsonpickle.decode(card_file.read())
-                for card in data:
+                data: List[Dict] = json.load(card_file)
+                for card_data in data:
+                    card = JsonCard.__new__(JsonCard)
+                    card.scryfallOracleId = card_data["scryfallOracleId"]
+                    card.name = card_data["name"]
+                    card.legality = card_data["legality"]
+                    card.isPauperCommander = card_data["isPauperCommander"]
                     existing_json[card.name] = card
         return existing_json
 
@@ -48,7 +58,7 @@ class FileHandler:
             with open(
                 cls.UPDATE_METADATA_FILE, encoding="utf-8"
             ) as update_metadata_file:
-                data: Dict[str, str] = jsonpickle.decode(update_metadata_file.read())
+                data: Dict[str, str] = json.load(update_metadata_file)
                 string_last_set_release_date = data["last_set_release_date"]
                 try:
                     last_set_release_date = datetime.strptime(
@@ -75,10 +85,12 @@ class FileHandler:
         format_list.sort(key=lambda x: x.name, reverse=False)
 
         with open(cls.RESULT_FILE, "w", encoding="utf-8") as output_file:
-            full_json_text = jsonpickle.encode(
-                value=format_list, indent=2, separators=(",", ": ")
+            json.dump(
+                [card.to_json() for card in format_list],
+                output_file,
+                indent=2,
+                sort_keys=True
             )
-            output_file.write(full_json_text)
             print(f"JSON successfully saved to {cls.RESULT_FILE}.")
 
         if last_set_release_date is not None:
@@ -87,10 +99,7 @@ class FileHandler:
             }
 
             with open(cls.UPDATE_METADATA_FILE, "w", encoding="utf-8") as output_file:
-                full_json_text = jsonpickle.encode(
-                    value=update_metadata, indent=2, separators=(",", ": ")
-                )
-                output_file.write(full_json_text)
+                json.dump(update_metadata, output_file, indent=2, sort_keys=True)
             print(
                 f"Last set's release date successfully saved to {cls.UPDATE_METADATA_FILE}."
             )
