@@ -2,19 +2,19 @@ name: Run Weekly Database Update Automation
 
 on:
   schedule:
-    - cron: '0 9 * * 5'  # 9am (UTC) every Friday
+    - cron: "0 9 * * 5" # 9am (UTC) every Friday
   workflow_dispatch: {}
 
 jobs:
   run-update:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout master branch
         uses: actions/checkout@v2
       - name: Setup minimum python version compatible with project
         uses: actions/setup-python@v2
-        with:  # 3.6.15 is available on ubuntu-20.04 by default, cuts down on run time
-          python-version: 3.6.15  
+        with:
+          python-version: 3.8
       - name: Load cached pypoetry installation and virtualenvs
         uses: actions/cache@v4
         with:
