@@ -11024,6 +11024,12 @@
   {
     "isPauperCommander": true,
     "legality": "Not Legal",
+    "name": "Captain Lannery Storm",
+    "scryfallOracleId": "235bf0ba-658c-463f-b112-7478ba27bd7b"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
     "name": "Captain Ripley Vance",
     "scryfallOracleId": "eefeeab1-b9f2-451a-9250-eb7b54d00fc1"
   },
