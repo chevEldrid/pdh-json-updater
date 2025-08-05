@@ -103,7 +103,7 @@ TEST_CARDS: List[MockCard] = [
     MockCard(  # Illegal because it cannot be included in a deck
         name="Swords to Plowshares", legality=Legality.NOT_LEGAL
     ),
-    MockCard(  # Legal As Commander Uncommon Background
+    MockCard(  # Legal As Commander Uncommon Background (now handled by LEGAL_COMMANDER_TYPES)
         name="Acolyte of Bahamut", legality=Legality.NOT_LEGAL, isPauperCommander=True
     ),
     MockCard(  # Legal in 99 Common Background
@@ -129,6 +129,18 @@ TEST_CARDS: List[MockCard] = [
     ),
     MockCard(  # Legal as commander but ONE is weird, check full_run_notes for details
         name="Blightbelly Rat", legality=Legality.LEGAL, isPauperCommander=True
+    ),
+    MockCard(  # Test Vehicle commander - should be legal as commander
+        name="Skysovereign, Consul Flagship", legality=Legality.NOT_LEGAL, isPauperCommander=True
+    ),
+    MockCard(  # Test Spacecraft commander - should be legal as commander
+        name="Fell Gravship", legality=Legality.NOT_LEGAL, isPauperCommander=True
+    ),
+    MockCard(  # Test common Vehicle - should be legal in 99 but not commander
+        name="Broadcast Rambler", legality=Legality.LEGAL, isPauperCommander=False
+    ),
+    MockCard(  # Test common Spacecraft - should be legal in 99 but not commander
+        name="Pinnacle Kill-Ship", legality=Legality.LEGAL, isPauperCommander=False
     ),
 ]
 
