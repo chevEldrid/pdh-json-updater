@@ -16,6 +16,7 @@ class JsonCard:  # pylint: disable=too-few-public-methods
     # Cards "banned" as a workaround, e.g. due to incorrect rarities in Scryfall
     SOFT_BANLIST = ["Spatial Contortion", "Circle of Flame", "Swords to Plowshares"]
     ILLEGAL_CARD_TYPES = ["Conspiracy"]
+    LEGAL_COMMANDER_TYPES = ["Creature", "Vehicle", "Spacecraft", "Background"]
 
     def __init__(self, scryfall_queried_card):
         # some sl printings don't have oracle ids in scryfall...
@@ -89,12 +90,7 @@ class JsonCard:  # pylint: disable=too-few-public-methods
             return False
         if (
             scryfall_queried_card["rarity"] == "uncommon"
-            and "Background" in front_card_face_typeline
-        ):
-            return True
-        if (
-            scryfall_queried_card["rarity"] == "uncommon"
-            and "Creature" in front_card_face_typeline
+            and any(commander_type in front_card_face_typeline for commander_type in cls.LEGAL_COMMANDER_TYPES)
         ):
             if "Land" in front_card_face_typeline:
                 return False
