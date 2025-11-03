@@ -26,7 +26,7 @@ class ScryfallFetcher:  # pylint: disable=too-few-public-methods
         data: List = []
         try:
             while True:
-                response = requests.get(url)
+                response = requests.get(url, timeout=60)
                 jsonpickled_response = None
                 if "application/json" in response.headers["content-type"]:
                     jsonpickled_response = jsonpickle.loads(response.text, safe=True)
