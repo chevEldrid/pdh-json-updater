@@ -117,6 +117,9 @@ TEST_CARDS: List[MockCard] = [
     MockCard(  # Illegal Commander from Unset
         name="Juggletron", legality=Legality.NOT_LEGAL
     ),
+    MockCard(  # Illegal since it's a back-face meld
+        name="Ragnarok, Divine Deliverance", legality=Legality.NOT_LEGAL, isPauperCommander=False
+    ),
     MockCard(  # Legal in 99 from Unset
         name="Croakid Amphibonaut", legality=Legality.LEGAL
     ),

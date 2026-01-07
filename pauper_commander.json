@@ -60408,12 +60408,6 @@
     "scryfallOracleId": "6d474413-e72f-414e-872f-aa00d38b7da4"
   },
   {
-    "isPauperCommander": true,
-    "legality": "Not Legal",
-    "name": "Ragnarok, Divine Deliverance",
-    "scryfallOracleId": "14b839ef-80b1-4e7d-b2fd-38e973899cde"
-  },
-  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Raid Bombardment",
