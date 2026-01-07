@@ -88,6 +88,9 @@ class JsonCard:  # pylint: disable=too-few-public-methods
         # check for backgrounds, Legal Enchantment Commanders
         if scryfall_queried_card["name"] in cls.PDH_BANLIST:
             return False
+        # check if card is a meld result (back side) - these are not castable and cannot be commanders
+        if scryfall_queried_card["layout"] == "meld" and scryfall_queried_card["mana_cost"] == "":
+            return False
         if (
             scryfall_queried_card["rarity"] == "uncommon"
             and any(commander_type in front_card_face_typeline for commander_type in cls.LEGAL_COMMANDER_TYPES)
