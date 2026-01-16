@@ -2924,6 +2924,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Appeal to Eirdu",
+    "scryfallOracleId": "cea09261-41a2-43e5-bf43-c4097e6615c6"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Appendage Amalgam",
     "scryfallOracleId": "9fb95813-05e5-4aa0-bab9-53d8a071fe6a"
   },
@@ -2992,6 +2998,12 @@
     "legality": "Legal",
     "name": "Aqueous Form",
     "scryfallOracleId": "3378fef3-4d8c-4d9e-a338-4abb6f70d410"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Aquitect's Defenses",
+    "scryfallOracleId": "b9dee727-8ad8-42e0-93c6-5ef91d3f7309"
   },
   {
     "isPauperCommander": false,
@@ -4244,6 +4256,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Assert Perfection",
+    "scryfallOracleId": "ecf574a5-6410-466d-a726-732134f904b2"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Assimilate Essence",
     "scryfallOracleId": "a24d3d60-2bd7-40cb-8002-b092943f61fe"
   },
@@ -4462,6 +4480,12 @@
     "legality": "Not Legal",
     "name": "Aunt May",
     "scryfallOracleId": "bdb769b5-c861-4ec1-ad6b-e2a56ca05fd1"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Auntie's Sentence",
+    "scryfallOracleId": "406e6db7-6e31-44b9-a793-57ee10688f71"
   },
   {
     "isPauperCommander": true,
@@ -5692,6 +5716,12 @@
     "legality": "Legal",
     "name": "Barbed Batterfist",
     "scryfallOracleId": "93c2b91d-7d4e-483c-a11f-4a525f881503"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Barbed Bloodletter",
+    "scryfallOracleId": "15febce7-8320-4591-9535-ef11c8adecc2"
   },
   {
     "isPauperCommander": false,
@@ -7032,6 +7062,12 @@
     "scryfallOracleId": "7d406aa7-636a-45c1-903f-11c2ce2ef3e3"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Bile-Vial Boggart",
+    "scryfallOracleId": "5a651557-ce08-46ba-aecd-0e4fbfdef3c0"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Bilious Skulldweller",
@@ -7610,6 +7646,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Blight Rot",
+    "scryfallOracleId": "cf5b1cf9-dcd3-44d1-b8b2-338651ebb2a1"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Blight Sickle",
     "scryfallOracleId": "5b95a5ed-a6b2-4044-9273-2021d27794e9"
   },
@@ -7648,6 +7690,12 @@
     "legality": "Legal",
     "name": "Blighted Bat",
     "scryfallOracleId": "542887e9-1032-4396-9cbb-aa3c11ee43a0"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Blighted Blackthorn",
+    "scryfallOracleId": "a294968e-9a7f-4d66-bde0-e775ae5f8197"
   },
   {
     "isPauperCommander": false,
@@ -8396,6 +8444,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Blossombind",
+    "scryfallOracleId": "0ecb35b3-5bd1-4467-a4a3-ce468023ced2"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Blossoming Sands",
     "scryfallOracleId": "45429b2c-be3b-4b2e-9bab-a059ccbda8cd"
   },
@@ -8634,6 +8688,12 @@
     "scryfallOracleId": "880793a2-84b0-4ae1-9bb8-6e942e3dc723"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Boggart Cursecrafter",
+    "scryfallOracleId": "5d58aefe-a3df-4e0a-b679-b967cd5fd2c6"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Boggart Forager",
@@ -8652,6 +8712,12 @@
     "scryfallOracleId": "f8fac28d-adf4-47e9-bdd3-8402cbf0f228"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Boggart Prankster",
+    "scryfallOracleId": "1bcac664-835a-4474-8ca4-263801bde08e"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Boggart Ram-Gang",
@@ -8668,6 +8734,12 @@
     "legality": "Not Legal",
     "name": "Boggart Trawler // Boggart Bog",
     "scryfallOracleId": "727f3201-1cfc-4ab2-9dfe-be4f7251f42f"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Bogslither's Embrace",
+    "scryfallOracleId": "21695c70-f746-4d77-b6d3-e2713a5c929e"
   },
   {
     "isPauperCommander": false,
@@ -8740,6 +8812,12 @@
     "legality": "Legal",
     "name": "Bold Impaler",
     "scryfallOracleId": "374e6c1b-5a9a-4d3f-8bff-2f6bc0419391"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Boldwyr Aggressor",
+    "scryfallOracleId": "ab32c671-7686-435b-a987-14a08f6790eb"
   },
   {
     "isPauperCommander": true,
@@ -8938,6 +9016,12 @@
     "legality": "Legal",
     "name": "Boneclad Necromancer",
     "scryfallOracleId": "6494e3c4-5489-44a5-94b6-4ee2d7830896"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Boneclub Berserker",
+    "scryfallOracleId": "a08f69f9-de48-46d6-8b75-31886159cf45"
   },
   {
     "isPauperCommander": true,
@@ -9454,6 +9538,12 @@
     "legality": "Legal",
     "name": "Bramble Wurm",
     "scryfallOracleId": "db4f67a9-6b47-4abe-9367-718da9e0609e"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Brambleback Brute",
+    "scryfallOracleId": "eb25920a-3162-4838-b092-09cbd43332fd"
   },
   {
     "isPauperCommander": true,
@@ -10008,6 +10098,12 @@
     "scryfallOracleId": "ae150b53-7c4e-48ce-abcf-cfe1e68bb4d5"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Bristlebane Outrider",
+    "scryfallOracleId": "48f7217e-ae11-44bd-ac42-7c8d9dd5dc36"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Bristlepack Sentry",
@@ -10454,6 +10550,12 @@
   {
     "isPauperCommander": true,
     "legality": "Not Legal",
+    "name": "Burdened Stoneback",
+    "scryfallOracleId": "8a5e17a0-6f3c-49ed-b328-ed90a46ed6c5"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
     "name": "Bureau Headmaster",
     "scryfallOracleId": "c022b5df-1d85-44c0-94a1-d01b345b845b"
   },
@@ -10516,6 +10618,12 @@
     "legality": "Legal",
     "name": "Burning Cloak",
     "scryfallOracleId": "4527c622-cebe-41eb-9178-4895cccffe99"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Burning Curiosity",
+    "scryfallOracleId": "7f420633-901d-47f9-ae0f-0f5b0ea8359c"
   },
   {
     "isPauperCommander": false,
@@ -12632,6 +12740,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Changeling Wayfinder",
+    "scryfallOracleId": "93409d98-93c8-4742-a635-2a4408e66c32"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Chant of the Skifsang",
     "scryfallOracleId": "5c902588-b16e-4679-b89e-7b11c928061f"
   },
@@ -12646,6 +12760,12 @@
     "legality": "Legal",
     "name": "Chaos Charm",
     "scryfallOracleId": "b81e5dbd-47a5-4994-91b7-e2a50c8e098d"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Chaos Spewer",
+    "scryfallOracleId": "77217a66-4ba8-443f-b915-178cfcc233e1"
   },
   {
     "isPauperCommander": true,
@@ -13020,6 +13140,12 @@
     "scryfallOracleId": "acac15c8-877d-49d4-9b42-90181c05a684"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Chitinous Graspling",
+    "scryfallOracleId": "930035c6-cde7-40ac-98ef-0840812037db"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Chittering Harvester",
@@ -13084,6 +13210,12 @@
     "legality": "Legal",
     "name": "Choking Vines",
     "scryfallOracleId": "3b6b565e-c0b5-48f9-b3e0-4d5d4b065402"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Chomping Changeling",
+    "scryfallOracleId": "d740dbd9-8e90-4121-8d53-c6ddf5178d58"
   },
   {
     "isPauperCommander": false,
@@ -13270,6 +13402,12 @@
     "legality": "Legal",
     "name": "Cinder Storm",
     "scryfallOracleId": "c7971968-c4ee-4437-92ec-1238bce1935f"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Cinder Strike",
+    "scryfallOracleId": "54421e69-d79e-4c2e-8ce6-96994d168835"
   },
   {
     "isPauperCommander": false,
@@ -15978,6 +16116,12 @@
     "scryfallOracleId": "94c47804-bb64-4a91-85c5-9241c39685aa"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Creakwood Safewright",
+    "scryfallOracleId": "f9b7bbea-ea20-400b-a5b7-4d6993d8777b"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Creature Bond",
@@ -16216,6 +16360,12 @@
     "legality": "Legal",
     "name": "Crossroads Village",
     "scryfallOracleId": "b26cfeb0-7bbe-4d93-8eed-e832f175a80c"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Crossroads Watcher",
+    "scryfallOracleId": "ab5f8b8c-e3f7-4265-bbc6-814bbfd4693a"
   },
   {
     "isPauperCommander": false,
@@ -17768,6 +17918,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Dawn's Light Archer",
+    "scryfallOracleId": "1f2d1de6-42e0-4f45-b43d-ce4980146469"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Dawn's Reflection",
     "scryfallOracleId": "362b7838-3b70-4a00-8c26-1c8b8a3b6acf"
   },
@@ -17794,6 +17950,12 @@
     "legality": "Legal",
     "name": "Dawnglare Invoker",
     "scryfallOracleId": "0d603aef-2b92-43fb-81ba-f89953a198df"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Dawnhand Eulogist",
+    "scryfallOracleId": "57bbd80b-290f-461e-8dc6-26ba4d673fa9"
   },
   {
     "isPauperCommander": false,
@@ -18532,6 +18694,12 @@
     "legality": "Legal",
     "name": "Deepcavern Imp",
     "scryfallOracleId": "1f295f2f-969a-4b82-98d1-7fe307ec83a7"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Deepchannel Duelist",
+    "scryfallOracleId": "c892d28c-4a78-4a7f-b8d5-c3663b819c5e"
   },
   {
     "isPauperCommander": true,
@@ -21066,6 +21234,12 @@
     "scryfallOracleId": "b56c5b39-2465-4a25-b806-bb84866e576f"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Dream Seizer",
+    "scryfallOracleId": "c7e4bc5d-e1d9-4fbc-8d53-0cec73086828"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Dream Spoilers",
@@ -21748,6 +21922,12 @@
     "legality": "Legal",
     "name": "Dukhara Scavenger",
     "scryfallOracleId": "b9906b19-912e-4a9d-888f-3c895bbed2c5"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Dundoolin Weaver",
+    "scryfallOracleId": "28564d10-bfc5-4beb-b0e2-b9aa5c03f740"
   },
   {
     "isPauperCommander": false,
@@ -22560,6 +22740,36 @@
     "scryfallOracleId": "ef100544-3e6d-4661-a1d1-8b02e58c059c"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Eclipsed Boggart",
+    "scryfallOracleId": "9cc3b91b-ad70-4b01-b718-fda3819f84d0"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Eclipsed Elf",
+    "scryfallOracleId": "7c89ef4d-b375-4644-ac8b-034effdbe98c"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Eclipsed Flamekin",
+    "scryfallOracleId": "48c641df-d511-4e35-b623-9d1fdb5240da"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Eclipsed Kithkin",
+    "scryfallOracleId": "e6227840-6e3e-48c7-b4a4-42cfd8f14b68"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Eclipsed Merrow",
+    "scryfallOracleId": "a3a00b62-f07e-44ef-8d97-22a3e7a06f72"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Ecologist's Terrarium",
@@ -22720,6 +22930,12 @@
     "legality": "Not Legal",
     "name": "Elas il-Kor, Sadistic Pilgrim",
     "scryfallOracleId": "a4d33e21-d3fe-4d5b-903c-b75e859d6f7f"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Elder Auntie",
+    "scryfallOracleId": "079f0d7f-57a5-4101-a9e3-c5a57148b3fb"
   },
   {
     "isPauperCommander": false,
@@ -23622,6 +23838,12 @@
     "scryfallOracleId": "2e056743-78ff-45b6-80df-7486d52d5df6"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Encumbered Reejerey",
+    "scryfallOracleId": "7668f7bc-9a43-4024-87c3-995aa0a65aaa"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "End the Festivities",
@@ -23782,6 +24004,12 @@
     "legality": "Not Legal",
     "name": "Enraged Ceratok",
     "scryfallOracleId": "e1f3f377-c7b1-474c-aed6-78b061d138c1"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Enraged Flamecaster",
+    "scryfallOracleId": "e35d7886-8c03-471c-b598-118d7eceddb4"
   },
   {
     "isPauperCommander": true,
@@ -24966,6 +25194,12 @@
     "scryfallOracleId": "5eae77d0-7653-4b07-a701-aabea13991bf"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Explosive Prodigy",
+    "scryfallOracleId": "22d059fc-4e47-44b5-9e21-4a56f1dff6a7"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Explosive Shot",
@@ -26132,6 +26366,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Feed the Flames",
+    "scryfallOracleId": "f474d244-d9be-4580-bf62-f97660e9c1a3"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Feed the Serpent",
     "scryfallOracleId": "ad404b46-dee7-41bb-969d-35b4cbaadece"
   },
@@ -26158,6 +26398,12 @@
     "legality": "Legal",
     "name": "Feint",
     "scryfallOracleId": "1bb8fe05-abb3-40a8-9e80-5d99ed0e4284"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Feisty Spikeling",
+    "scryfallOracleId": "fcf796fa-43ae-43d1-a124-776338bc3542"
   },
   {
     "isPauperCommander": false,
@@ -26870,6 +27116,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Firdoch Core",
+    "scryfallOracleId": "126c75c0-414b-4e55-8747-2b5566ce716f"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Fire // Ice",
     "scryfallOracleId": "ae92942b-919c-4ea9-b693-85fcef765d5a"
   },
@@ -27402,6 +27654,12 @@
     "scryfallOracleId": "6a521eed-0965-4fce-8a11-190dc2863da8"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Flame-Chain Mauler",
+    "scryfallOracleId": "d6eef6a7-0cf4-4ee8-90e0-727a283c3be9"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Flame-Kin War Scout",
@@ -27434,6 +27692,12 @@
   {
     "isPauperCommander": true,
     "legality": "Not Legal",
+    "name": "Flamebraider",
+    "scryfallOracleId": "c552bd73-ce75-40fd-9d80-9e90b6f45274"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
     "name": "Flamecache Gecko",
     "scryfallOracleId": "d767463b-0fc9-43fc-a85f-e60f030f9b96"
   },
@@ -27454,6 +27718,12 @@
     "legality": "Legal",
     "name": "Flamekin Brawler",
     "scryfallOracleId": "9e3dd85c-ba19-4d22-9f90-252676f3cffa"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Flamekin Gildweaver",
+    "scryfallOracleId": "bc8427fb-e5ee-4b44-9a4f-6d9f01b4b896"
   },
   {
     "isPauperCommander": true,
@@ -27544,6 +27814,12 @@
     "legality": "Legal",
     "name": "Flare of Faith",
     "scryfallOracleId": "13ebe447-1f8f-4b12-9e35-9d334a863c19"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Flaring Cinder",
+    "scryfallOracleId": "f70d65bf-5f1c-4aee-9bd1-f5ee6974b058"
   },
   {
     "isPauperCommander": true,
@@ -27904,6 +28180,12 @@
     "legality": "Legal",
     "name": "Floating-Dream Zubera",
     "scryfallOracleId": "3d2e9712-d546-40ac-a5ea-2dd7b7d9e0c1"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Flock Impostor",
+    "scryfallOracleId": "6522070b-7002-44fd-8deb-832fe67ef9a9"
   },
   {
     "isPauperCommander": false,
@@ -28372,6 +28654,12 @@
     "legality": "Legal",
     "name": "For the Family",
     "scryfallOracleId": "f6abd7e5-8c52-4b36-98c5-a4df8b5b6863"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Foraging Wickermaw",
+    "scryfallOracleId": "11ceb2db-021e-422d-976e-7bfe3b67a8aa"
   },
   {
     "isPauperCommander": true,
@@ -29820,6 +30108,12 @@
     "scryfallOracleId": "2fcb1c1c-6157-4955-b899-e8a8b337d188"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Gallant Fowlknight",
+    "scryfallOracleId": "4e0ba9d5-4bd6-49a0-ae00-70818738d0ba"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Gallant Pie-Wielder",
@@ -29938,6 +30232,12 @@
     "legality": "Not Legal",
     "name": "Gang of Elk",
     "scryfallOracleId": "b99d6d51-3ead-4b81-8e0c-f458619ebb24"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Gangly Stompling",
+    "scryfallOracleId": "60206d4e-4301-4d7a-a68e-46a2ad9fc407"
   },
   {
     "isPauperCommander": false,
@@ -31274,6 +31574,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Gilt-Leaf's Embrace",
+    "scryfallOracleId": "5eb8bb1d-7567-4c24-913b-463b5fe463c4"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Giltgrove Stalker",
     "scryfallOracleId": "2be3969b-a427-47be-a49c-47b98e3d6b5f"
   },
@@ -31460,8 +31766,20 @@
   {
     "isPauperCommander": true,
     "legality": "Not Legal",
+    "name": "Glamer Gifter",
+    "scryfallOracleId": "e67a820b-6249-478e-91db-9827e44aa60a"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
     "name": "Glamer Spinners",
     "scryfallOracleId": "b881abd7-1fe7-4404-b9ba-fb64869126fc"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Glamermite",
+    "scryfallOracleId": "a7b0d897-38c0-4f90-81e8-3c5b8d31a607"
   },
   {
     "isPauperCommander": false,
@@ -31714,6 +32032,12 @@
     "legality": "Legal",
     "name": "Glistener Seer",
     "scryfallOracleId": "bcbb318d-0ebc-48a2-afd7-69cf5351893d"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Glister Bairn",
+    "scryfallOracleId": "6a7229a8-1634-4278-ab50-0ec2b51edac1"
   },
   {
     "isPauperCommander": false,
@@ -31978,6 +32302,12 @@
     "legality": "Legal",
     "name": "Gnarlback Rhino",
     "scryfallOracleId": "1ae339fd-8e64-4e3a-8e27-e4993932ba62"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Gnarlbark Elm",
+    "scryfallOracleId": "a848ea46-347d-49c7-85c8-023cf836d0b3"
   },
   {
     "isPauperCommander": false,
@@ -33096,6 +33426,12 @@
     "scryfallOracleId": "28b2d31f-1ff7-4374-8ea3-0dd4a96c4a32"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Goldmeadow Nomad",
+    "scryfallOracleId": "79dfe2eb-82b9-4dae-95c8-58fdf9006bc7"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Goldmeadow Stalwart",
@@ -33762,6 +34098,12 @@
     "scryfallOracleId": "a9e28134-382b-45e5-8fd0-cc0e7d56fd0c"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Gravelgill Scoundrel",
+    "scryfallOracleId": "6d7f7e6e-5076-4af7-afe3-3e500835c4aa"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Gravelighter",
@@ -33898,6 +34240,12 @@
     "legality": "Not Legal",
     "name": "Great Desert Prospector",
     "scryfallOracleId": "37278877-e7d8-47b6-a65f-37c7f85e3a0a"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Great Forest Druid",
+    "scryfallOracleId": "5cb6ebf7-6a75-4464-9e39-e171fcb52de3"
   },
   {
     "isPauperCommander": false,
@@ -34294,6 +34642,12 @@
     "legality": "Legal",
     "name": "Grisly Transformation",
     "scryfallOracleId": "0bb359bb-a1db-4535-8245-097ee989f4f5"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Gristle Glutton",
+    "scryfallOracleId": "b7163800-41fc-410a-9650-50ae90842170"
   },
   {
     "isPauperCommander": true,
@@ -35080,6 +35434,12 @@
     "legality": "Legal",
     "name": "Gutless Plunderer",
     "scryfallOracleId": "31265357-5ecb-4d83-80ff-1795b1dfdecb"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Gutsplitter Gang",
+    "scryfallOracleId": "322c1c8f-ef8a-4a9f-b9ce-927720bad1d6"
   },
   {
     "isPauperCommander": false,
@@ -36370,6 +36730,12 @@
     "legality": "Not Legal",
     "name": "Heir of the Wilds",
     "scryfallOracleId": "35cb88aa-6ed9-4a2d-9bbc-5937e1df4f4a"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Heirloom Auntie",
+    "scryfallOracleId": "cc9523da-f48e-49ab-9989-a4031dafb426"
   },
   {
     "isPauperCommander": false,
@@ -37802,6 +38168,12 @@
   {
     "isPauperCommander": true,
     "legality": "Not Legal",
+    "name": "Hovel Hurler",
+    "scryfallOracleId": "fb9cd9d0-8eea-4aa8-bb9c-bb0aac847421"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
     "name": "Hover Barrier",
     "scryfallOracleId": "a09cce6f-c957-49d7-af99-a7b2bce786e8"
   },
@@ -38710,6 +39082,12 @@
     "legality": "Not Legal",
     "name": "Illuminator Virtuoso",
     "scryfallOracleId": "ed2af15e-955b-43a1-80af-2484be373db3"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Illusion Spinners",
+    "scryfallOracleId": "b608288e-1755-4738-b828-9df6998bae8d"
   },
   {
     "isPauperCommander": true,
@@ -40276,6 +40654,12 @@
     "legality": "Not Legal",
     "name": "Iron-Heart Chimera",
     "scryfallOracleId": "fe7c70dd-76ff-4958-9973-6452c7f071ed"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Iron-Shield Elf",
+    "scryfallOracleId": "1c77b4da-b580-4ce9-b127-76de674f5694"
   },
   {
     "isPauperCommander": false,
@@ -42164,6 +42548,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Keep Out",
+    "scryfallOracleId": "61cb927a-4cf8-49d6-ab4b-9e882bc08774"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Keep Safe",
     "scryfallOracleId": "5602c14d-cc22-47d7-a1b0-6491749f00dd"
   },
@@ -42690,6 +43080,12 @@
     "scryfallOracleId": "b6565da9-773c-49b1-85f5-e34f07ba84cb"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Kinsbaile Aspirant",
+    "scryfallOracleId": "845d80ee-1cd5-437a-90a5-40dcc657d3aa"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Kinsbaile Balloonist",
@@ -42814,6 +43210,12 @@
     "legality": "Legal",
     "name": "Kitesail Skirmisher",
     "scryfallOracleId": "462269c7-ca16-4aa7-bf52-f7fcda25a05b"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Kithkeeper",
+    "scryfallOracleId": "5c5766f9-befd-4426-9527-d50af0699ca1"
   },
   {
     "isPauperCommander": false,
@@ -43876,6 +44278,18 @@
     "legality": "Not Legal",
     "name": "Kulrath Knight",
     "scryfallOracleId": "f3d1b2e9-6ede-416d-937b-2063ea278d2f"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Kulrath Mystic",
+    "scryfallOracleId": "ed428638-181b-47cb-92f4-379db020e634"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Kulrath Zealot",
+    "scryfallOracleId": "d18ca75c-3572-4851-9580-27bafe10edd6"
   },
   {
     "isPauperCommander": false,
@@ -45416,6 +45830,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Liminal Hold",
+    "scryfallOracleId": "101407b4-e7e8-4aff-84a2-a97947358b88"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Line Cutter",
     "scryfallOracleId": "a43d9793-b2ee-427c-95ca-285611aa1a4d"
   },
@@ -46458,6 +46878,12 @@
     "scryfallOracleId": "7e23a2e7-b8b3-424f-8922-a1adb1db3f4d"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Luminollusk",
+    "scryfallOracleId": "c8bf2dce-7bcd-45cb-bf15-f53e24333a01"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Luminous Bonds",
@@ -46668,10 +47094,22 @@
     "scryfallOracleId": "135e6545-4ec5-4136-9019-3fda92052b7a"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Lys Alana Dignitary",
+    "scryfallOracleId": "ce7582a2-e014-41fb-8753-00d29cffc81a"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Lys Alana Huntmaster",
     "scryfallOracleId": "3f3439e1-75ce-482d-881f-836492dca6e9"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Lys Alana Informant",
+    "scryfallOracleId": "b5058b5c-0359-42ec-ba9e-ae1371bb9c22"
   },
   {
     "isPauperCommander": true,
@@ -48300,6 +48738,12 @@
     "scryfallOracleId": "2d9663be-c466-4191-85e2-a69ce0965432"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Meanders Guide",
+    "scryfallOracleId": "8229954b-e1ef-4503-8443-2356e2a87663"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Meat Locker // Drowned Diner",
@@ -48848,6 +49292,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Merrow Skyswimmer",
+    "scryfallOracleId": "d709f396-021f-49eb-adb5-374aa790eaae"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Merrow Wavebreakers",
     "scryfallOracleId": "f6c325e8-b9bd-44ab-9370-196a40c71e1f"
   },
@@ -49138,6 +49588,12 @@
     "legality": "Legal",
     "name": "Midnight Scavengers",
     "scryfallOracleId": "1c29ae09-cc93-4a2a-b432-3c78ae01c1ed"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Midnight Tilling",
+    "scryfallOracleId": "79bc2c6d-b03d-4ceb-b468-293378ec73ae"
   },
   {
     "isPauperCommander": false,
@@ -49832,6 +50288,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Mischievous Sneakling",
+    "scryfallOracleId": "fe7a4361-561a-4bab-921e-d01bab19dad3"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Misery Charm",
     "scryfallOracleId": "46aa8dca-2a7d-4bff-9323-5f6933ca95f2"
   },
@@ -50014,6 +50476,12 @@
     "legality": "Legal",
     "name": "Misthoof Kirin",
     "scryfallOracleId": "678eee7a-549d-4f40-a81c-70d036fc299d"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Mistmeadow Council",
+    "scryfallOracleId": "9acfec0d-05a0-4b28-a883-e6863f1cb773"
   },
   {
     "isPauperCommander": true,
@@ -50694,6 +51162,12 @@
     "scryfallOracleId": "a8e69725-cd57-4340-83b1-498bc0bd77b8"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Moon-Vigil Adherents",
+    "scryfallOracleId": "d0fa43f6-d8f6-4674-b538-6d546b7dcf40"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Moonblade Shinobi",
@@ -50726,6 +51200,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Moonglove Extractor",
+    "scryfallOracleId": "980affa7-6308-4acd-af64-f804e574a89b"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Moonglove Winnower",
     "scryfallOracleId": "d4870995-f434-4985-a921-1dc9556cee41"
   },
@@ -50734,6 +51214,12 @@
     "legality": "Legal",
     "name": "Moonlight Geist",
     "scryfallOracleId": "12a8c546-d0d1-4c3d-bfca-c1e59cef349a"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Moonlit Lamenter",
+    "scryfallOracleId": "ce009bd4-5ffb-46a4-a9dd-b9c060926467"
   },
   {
     "isPauperCommander": false,
@@ -50848,6 +51334,12 @@
     "legality": "Not Legal",
     "name": "Morbius the Living Vampire",
     "scryfallOracleId": "1a947e4d-8a14-45f1-bb80-760a317b1ed0"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Morcant's Loyalist",
+    "scryfallOracleId": "b2c30683-cc7f-4341-add1-b08cb9b93eeb"
   },
   {
     "isPauperCommander": false,
@@ -51274,6 +51766,12 @@
     "legality": "Legal",
     "name": "Mudbutton Clanger",
     "scryfallOracleId": "b57e13ac-12fc-4b6a-9ca4-3ffb60c6b6ad"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Mudbutton Cursetosser",
+    "scryfallOracleId": "b63e5518-61f3-4cde-a799-5f3ee6aba70b"
   },
   {
     "isPauperCommander": false,
@@ -52926,6 +53424,12 @@
     "scryfallOracleId": "2808d652-907d-4071-b386-814507a1549e"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Nightmare Sower",
+    "scryfallOracleId": "4121b7d9-5fbe-40e2-a2a6-d7633f423b5f"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Nightscape Apprentice",
@@ -53386,6 +53890,12 @@
     "legality": "Not Legal",
     "name": "Noggle Ransacker",
     "scryfallOracleId": "162aed84-f87f-4bd4-9cac-5008766bdfb7"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Noggle Robber",
+    "scryfallOracleId": "a2f33166-6cfc-4dc5-8edc-088bf40f06b5"
   },
   {
     "isPauperCommander": true,
@@ -54502,6 +55012,12 @@
     "legality": "Not Legal",
     "name": "Ominous Sphinx",
     "scryfallOracleId": "2cb968c4-5b50-4242-8db7-dd1fa9ce4948"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Omni-Changeling",
+    "scryfallOracleId": "66d4370e-19b9-4680-9b1e-a192537bc002"
   },
   {
     "isPauperCommander": false,
@@ -56604,6 +57120,12 @@
     "scryfallOracleId": "f6e0cb77-4115-4948-8e1e-fdb774b1b254"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Pestered Wellguard",
+    "scryfallOracleId": "b0dbfd40-ecc5-493b-976b-bc3f62137fcf"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Pestermite",
@@ -58478,6 +59000,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Prideful Feastling",
+    "scryfallOracleId": "faf2f368-a7e7-4427-bc03-929f294b1e03"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Prideful Parent",
     "scryfallOracleId": "a90d1d35-6d67-43b3-8256-b0318b3a4b07"
   },
@@ -58672,6 +59200,12 @@
     "legality": "Legal",
     "name": "Prishe's Wanderings",
     "scryfallOracleId": "bc92988c-d628-45ea-8606-516a1211cef3"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Prismabasher",
+    "scryfallOracleId": "f75be4f2-d1a7-40c7-a0e4-ba8b03556ac6"
   },
   {
     "isPauperCommander": true,
@@ -59302,6 +59836,12 @@
     "legality": "Legal",
     "name": "Pulse of Murasa",
     "scryfallOracleId": "d5b446a4-a761-42f0-acf0-ea0a1a9538d6"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Pummeler for Hire",
+    "scryfallOracleId": "ffa23c3a-76a8-414f-aa3b-fc09aabd78c5"
   },
   {
     "isPauperCommander": false,
@@ -61488,6 +62028,12 @@
     "scryfallOracleId": "251cee41-30f5-4bba-93cd-31493a5ea051"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Reaping Willow",
+    "scryfallOracleId": "ce60402c-34cd-44fe-ae1d-4a5404298f5b"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Reaping the Graves",
@@ -61660,6 +62206,12 @@
     "legality": "Not Legal",
     "name": "Reckless Racer",
     "scryfallOracleId": "d9a09e7f-6bef-4e75-b5c7-cea20a69cf02"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Reckless Ransacking",
+    "scryfallOracleId": "ebcd198e-7fbd-46e0-a6d9-ff499e541978"
   },
   {
     "isPauperCommander": false,
@@ -62176,6 +62728,12 @@
     "legality": "Legal",
     "name": "Reliquary Monk",
     "scryfallOracleId": "a149ac31-b792-4fbe-903a-788bbdfd5e97"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Reluctant Dounguard",
+    "scryfallOracleId": "162dcfa0-36e4-41cd-8322-08e810ff04d4"
   },
   {
     "isPauperCommander": false,
@@ -62698,6 +63256,12 @@
     "legality": "Legal",
     "name": "Resurrection",
     "scryfallOracleId": "837417d8-8260-486d-a3ed-3b5711eaf34a"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Retched Wretch",
+    "scryfallOracleId": "0d3b6e27-2f8b-42e0-9490-7b134e84bb6b"
   },
   {
     "isPauperCommander": false,
@@ -63294,6 +63858,12 @@
     "scryfallOracleId": "b760b1db-764b-4b40-8a84-691b5c9c1dbc"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Rimekin Recluse",
+    "scryfallOracleId": "ad99e430-e13f-4819-a2ee-bf3332ef517d"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Rimeshield Frost Giant",
@@ -63704,6 +64274,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Riverguard's Reflexes",
+    "scryfallOracleId": "0bdebad7-a05e-439a-b5a9-241a2d09f943"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Riverwalk Technique",
     "scryfallOracleId": "a123aab8-3f3a-4187-abcb-21a99dcf13bb"
   },
@@ -64036,6 +64612,12 @@
     "legality": "Legal",
     "name": "Rooftop Nuisance",
     "scryfallOracleId": "8843faa9-0cd5-4ef3-8e7b-b8833db9dc84"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Rooftop Percher",
+    "scryfallOracleId": "3dc73517-0767-46ae-bc8d-ee378237a509"
   },
   {
     "isPauperCommander": false,
@@ -65318,6 +65900,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Safewright Cavalry",
+    "scryfallOracleId": "6e04a375-303e-43ba-bca1-4e959711a7f6"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Safewright Quest",
     "scryfallOracleId": "003c48d4-0303-4970-8637-47ae060385aa"
   },
@@ -66508,6 +67096,18 @@
     "legality": "Legal",
     "name": "Scarab Feast",
     "scryfallOracleId": "8b9043d3-a1c6-4f49-9c49-ef78bbfbd4ac"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Scarblade Scout",
+    "scryfallOracleId": "f6758e8f-5462-48a7-96d3-60d07b1563fc"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Scarblade's Malice",
+    "scryfallOracleId": "66d57851-2844-4b9d-be78-e90fc620b750"
   },
   {
     "isPauperCommander": false,
@@ -69366,6 +69966,12 @@
     "scryfallOracleId": "85e2b073-e953-46f9-a1d4-0dfe030b3751"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Shimmercreep",
+    "scryfallOracleId": "52244c23-7680-4bed-8ef8-8d10e289d3f7"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Shimmerdrift Vale",
@@ -69454,6 +70060,12 @@
     "legality": "Legal",
     "name": "Shinen of Stars' Light",
     "scryfallOracleId": "d43f813b-3607-4bc3-b996-3dbad6977bd8"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Shinestriker",
+    "scryfallOracleId": "1b94ee87-a2f4-47f1-9fc7-4a167cad1b3b"
   },
   {
     "isPauperCommander": false,
@@ -69658,6 +70270,12 @@
     "legality": "Legal",
     "name": "Shore Keeper",
     "scryfallOracleId": "9625773b-1976-49b3-88d2-93a4befb595c"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Shore Lurker",
+    "scryfallOracleId": "4288ba56-ddd0-4bd9-ba61-daf03e9f2d7f"
   },
   {
     "isPauperCommander": false,
@@ -70500,6 +71118,18 @@
     "scryfallOracleId": "b24f2917-b96c-4348-b033-4926df3bd4b0"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Silvergill Mentor",
+    "scryfallOracleId": "dcf07f38-422f-46c3-aee9-50540b9c9115"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Silvergill Peddler",
+    "scryfallOracleId": "08688903-d9cc-4d57-ba91-14a8523551b9"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Silverglade Elemental",
@@ -70858,6 +71488,12 @@
     "legality": "Legal",
     "name": "Sizzling Barrage",
     "scryfallOracleId": "26a55f91-91a1-4a1e-86fe-6551fd64ea87"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Sizzling Changeling",
+    "scryfallOracleId": "60ad7aaa-8ce6-4449-8e8d-4ccf925010db"
   },
   {
     "isPauperCommander": true,
@@ -73434,6 +74070,12 @@
     "scryfallOracleId": "7ea8426a-3b66-4fd0-9863-2b68d379671f"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Soulbright Seeker",
+    "scryfallOracleId": "762679dd-4345-43c3-929b-15959443aeb0"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Soulcage Fiend",
@@ -73546,6 +74188,12 @@
     "legality": "Legal",
     "name": "Sound the Call",
     "scryfallOracleId": "8f0ab2fb-297a-4824-8d2c-0120eec09e5e"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Sourbread Auntie",
+    "scryfallOracleId": "6b087ae1-1412-4dd9-9b96-3b45be52d386"
   },
   {
     "isPauperCommander": false,
@@ -74472,6 +75120,12 @@
     "scryfallOracleId": "663d6c61-e269-4f2f-9d8f-49c4c23f05d8"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Spiral into Solitude",
+    "scryfallOracleId": "d8599f06-f030-4575-8497-307a4d7ec182"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Spiraling Duelist",
@@ -75138,6 +75792,12 @@
     "scryfallOracleId": "54bd7b7c-4052-437d-b2e4-311339e8e16e"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Squawkroaster",
+    "scryfallOracleId": "6b79404b-2fae-41fb-994c-d4cd895e8f09"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Squeaking Pie Grubfellows",
@@ -75274,6 +75934,12 @@
     "legality": "Legal",
     "name": "Staggershock",
     "scryfallOracleId": "056c3b7d-b603-40b8-8404-18c2eb7e7129"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Stalactite Dagger",
+    "scryfallOracleId": "064c3269-c012-4fc7-84c3-5f147a82a03c"
   },
   {
     "isPauperCommander": false,
@@ -76008,6 +76674,12 @@
     "scryfallOracleId": "9c0d7d7d-5513-4e2b-b834-1ff999ab24f5"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Sting-Slinger",
+    "scryfallOracleId": "945a4a4d-fdfd-4c39-9975-5b22d17a4e70"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Stingblade Assassin",
@@ -76168,6 +76840,12 @@
     "legality": "Not Legal",
     "name": "Stoic Ephemera",
     "scryfallOracleId": "eee83439-2dee-47d7-97f8-d75bef70c40e"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Stoic Grove-Guide",
+    "scryfallOracleId": "96c4b51c-8a10-428c-a948-e1ba9c652bfd"
   },
   {
     "isPauperCommander": false,
@@ -76696,6 +77374,12 @@
     "legality": "Legal",
     "name": "Strategic Planning",
     "scryfallOracleId": "02b5acf3-47cb-4d39-9307-e02656f1879b"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Stratosoarer",
+    "scryfallOracleId": "36ab41b7-bcfb-4618-bbfb-70d608dba15a"
   },
   {
     "isPauperCommander": true,
@@ -77318,6 +78002,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Summit Sentinel",
+    "scryfallOracleId": "e7b88da3-7dd1-45f8-b555-98ad838b2917"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Summon Undead",
     "scryfallOracleId": "c86ff0e3-5d6e-4981-a2da-8da70b9daeb0"
   },
@@ -77434,6 +78124,12 @@
     "legality": "Legal",
     "name": "Sun-Crowned Hunters",
     "scryfallOracleId": "9e6e6458-9e0e-404c-af07-225c4665eaec"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Sun-Dappled Celebrant",
+    "scryfallOracleId": "27c87371-697e-4ca6-a7f4-d99215d908bc"
   },
   {
     "isPauperCommander": true,
@@ -77854,6 +78550,12 @@
     "legality": "Legal",
     "name": "Surging Sentinels",
     "scryfallOracleId": "0b98ae2a-56ac-485d-b064-a06e1e8d4055"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Surly Farrier",
+    "scryfallOracleId": "ef67c170-68aa-4ada-8cee-261a4dbb1b5d"
   },
   {
     "isPauperCommander": true,
@@ -78962,6 +79664,12 @@
   {
     "isPauperCommander": true,
     "legality": "Not Legal",
+    "name": "Tanufel Rimespeaker",
+    "scryfallOracleId": "bf8de96b-0a75-4459-a123-dcf95e1b89f2"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
     "name": "Taoist Hermit",
     "scryfallOracleId": "960b1251-12af-4766-8df1-bb98e7e967f5"
   },
@@ -79564,6 +80272,12 @@
     "legality": "Not Legal",
     "name": "Tenacious Tomeseeker",
     "scryfallOracleId": "b07bf08b-d9ec-429f-be6d-a7afa27c60c4"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Tend the Sprigs",
+    "scryfallOracleId": "91363d71-eef0-48e8-9a68-8f363ff2790e"
   },
   {
     "isPauperCommander": true,
@@ -80550,6 +81264,18 @@
     "scryfallOracleId": "d97c4bca-6433-4cb0-b63a-fdf8360fc29c"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Thoughtweft Imbuer",
+    "scryfallOracleId": "9dee8c0b-71e0-4a94-b411-78b29b599847"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Thoughtweft Lieutenant",
+    "scryfallOracleId": "50dd9e17-6dae-4ff6-8a38-50088c71283f"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Thousand Moons Crackshot",
@@ -81430,6 +82156,12 @@
     "legality": "Not Legal",
     "name": "Timid Drake",
     "scryfallOracleId": "aa8c5467-190a-4c6a-872c-56b8f8d01a2b"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Timid Shieldbearer",
+    "scryfallOracleId": "8bef3511-ceeb-4d57-972a-ab363ecacd5b"
   },
   {
     "isPauperCommander": true,
@@ -82842,6 +83574,12 @@
     "scryfallOracleId": "cd1b3ef3-73ac-4f06-8cfb-5f2388481379"
   },
   {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Tributary Vaulter",
+    "scryfallOracleId": "991f4eec-cf3e-4554-ba88-c44bb0d255f0"
+  },
+  {
     "isPauperCommander": true,
     "legality": "Not Legal",
     "name": "Tribute Mage",
@@ -83396,6 +84134,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Tweeze",
+    "scryfallOracleId": "9a294cbd-df18-4ee0-acaa-e31390a7f508"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Twiddle",
     "scryfallOracleId": "773ad2ef-5acc-49ea-8d85-056330e87039"
   },
@@ -83446,6 +84190,12 @@
     "legality": "Not Legal",
     "name": "Twinblade Slasher",
     "scryfallOracleId": "2375a9c6-28ef-4c8f-909c-0aa7e5fc085c"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Twinflame Travelers",
+    "scryfallOracleId": "341cf69a-246c-4eb5-910c-18c13a4c3dce"
   },
   {
     "isPauperCommander": true,
@@ -84164,6 +84914,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Unexpected Assistance",
+    "scryfallOracleId": "c452e748-8a2a-4f68-8869-e294925a8b0b"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Unexpected Fangs",
     "scryfallOracleId": "dfa8415d-2474-46ca-b92f-6e12e3268cf5"
   },
@@ -84196,6 +84952,12 @@
     "legality": "Legal",
     "name": "Unforge",
     "scryfallOracleId": "fa360a9d-3cff-4833-9ce2-b2f53d26127f"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Unforgiving Aim",
+    "scryfallOracleId": "be7e220e-272e-45ca-8265-8d78da2cd2a7"
   },
   {
     "isPauperCommander": true,
@@ -84538,6 +85300,12 @@
     "legality": "Legal",
     "name": "Unwavering Initiate",
     "scryfallOracleId": "e6088c23-a660-4d2c-b633-1c6cb1a59ebe"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Unwelcome Sprite",
+    "scryfallOracleId": "d0a38e8c-c42c-4c99-8a44-d390ff2511ff"
   },
   {
     "isPauperCommander": false,
@@ -86456,6 +87224,12 @@
   {
     "isPauperCommander": true,
     "legality": "Not Legal",
+    "name": "Vinebred Brawler",
+    "scryfallOracleId": "5fffd840-1e6e-4f5d-b847-802f9a25eb5c"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
     "name": "Vinereap Mentor",
     "scryfallOracleId": "db649e15-24ca-4fd8-9f0b-f1df28c9c57d"
   },
@@ -86602,6 +87376,12 @@
     "legality": "Legal",
     "name": "Virtuous Charge",
     "scryfallOracleId": "5315ed83-cb93-4522-b439-3784e7f31e37"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Virulent Emissary",
+    "scryfallOracleId": "3d4bec90-7bbc-4385-a2b8-303c7a8d0a0f"
   },
   {
     "isPauperCommander": true,
@@ -87238,6 +88018,12 @@
     "legality": "Legal",
     "name": "Voracious Null",
     "scryfallOracleId": "0f92daf5-520d-472a-a835-e6680a92fdab"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Voracious Tome-Skimmer",
+    "scryfallOracleId": "25b0876e-c995-486e-8536-6e68b76b9c86"
   },
   {
     "isPauperCommander": false,
@@ -87938,8 +88724,20 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Wanderbrine Preacher",
+    "scryfallOracleId": "4b4dcdb1-0017-494f-8d83-6706b188e575"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Wanderbrine Rootcutters",
     "scryfallOracleId": "7e2e96db-e4df-41de-b5a7-712c4a8fe7be"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Wanderbrine Trapper",
+    "scryfallOracleId": "915d70ac-46ce-41d0-a137-f17e7aaea87d"
   },
   {
     "isPauperCommander": false,
@@ -88054,6 +88852,12 @@
     "legality": "Not Legal",
     "name": "Wandertale Mentor",
     "scryfallOracleId": "9d14c7bd-7802-401c-b02b-c7f3c51b007f"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Wanderwine Distracter",
+    "scryfallOracleId": "6c0f6673-bc24-4c84-b4e7-736283ffd60e"
   },
   {
     "isPauperCommander": true,
@@ -88404,6 +89208,12 @@
     "scryfallOracleId": "9f90dcd1-e372-40c5-9de2-81392b0add06"
   },
   {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Warren Torchmaster",
+    "scryfallOracleId": "20c3c8ab-e996-462e-a1f6-87421fc3ee55"
+  },
+  {
     "isPauperCommander": false,
     "legality": "Legal",
     "name": "Warren Weirding",
@@ -88456,6 +89266,12 @@
     "legality": "Legal",
     "name": "Warthog",
     "scryfallOracleId": "ae1f22a5-89cf-440c-b90d-fed194b2dee5"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Wary Farmer",
+    "scryfallOracleId": "63eed1f5-442f-433d-989c-397b88543162"
   },
   {
     "isPauperCommander": false,
@@ -89690,6 +90506,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Wild Unraveling",
+    "scryfallOracleId": "dd1a4219-437b-494f-ae0e-1d3181ffcd63"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Wild Wanderer",
     "scryfallOracleId": "ff16f889-9203-4874-919b-42e540cadcbc"
   },
@@ -89770,6 +90592,12 @@
     "legality": "Legal",
     "name": "Wildslayer Elves",
     "scryfallOracleId": "c2f0b795-9f73-43db-aa8c-3b06963ba2b6"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Wildvine Pummeler",
+    "scryfallOracleId": "6c34674f-856b-4062-87d5-6ed73d9a9855"
   },
   {
     "isPauperCommander": false,
