@@ -15224,6 +15224,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Containment Protocol",
+    "scryfallOracleId": "d33c7ea2-4d17-4cdb-aa58-c25c57836297"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Contaminated Aquifer",
     "scryfallOracleId": "c27b771d-b5ec-459a-a101-f078cb8d0184"
   },
@@ -18982,6 +18988,12 @@
     "legality": "Legal",
     "name": "Defile",
     "scryfallOracleId": "49dddec0-d958-4810-8c6e-225fc8118c8f"
+  },
+  {
+    "isPauperCommander": true,
+    "legality": "Not Legal",
+    "name": "Definitely Not a Turtle",
+    "scryfallOracleId": "3d8dfd57-7d26-4a3b-a9c3-33077c85b3db"
   },
   {
     "isPauperCommander": false,
@@ -28610,6 +28622,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Foe-liage",
+    "scryfallOracleId": "017cadd8-55ee-497a-84d4-6535173bc1eb"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Fog",
     "scryfallOracleId": "27e9db49-7af7-4bef-ad4c-bf5dfb92030d"
   },
@@ -35896,6 +35914,12 @@
     "legality": "Legal",
     "name": "Hamato Guardian Stance",
     "scryfallOracleId": "e08b19ca-f9d7-4c33-b37a-a77b37aabf1b"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Hamato Ninp\u014d",
+    "scryfallOracleId": "0587fe46-1bed-4ef3-b087-04d4cc6a334d"
   },
   {
     "isPauperCommander": true,
@@ -51398,6 +51422,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Monster Mashup",
+    "scryfallOracleId": "485e1d84-2867-4c66-a399-cdc2a22f6fc9"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Monstrify",
     "scryfallOracleId": "0f58f791-469a-4a22-996e-4906c0914858"
   },
@@ -59284,6 +59314,12 @@
     "legality": "Legal",
     "name": "Preening Champion",
     "scryfallOracleId": "e1c458ca-10f6-4da8-a93d-3adfb86fe97d"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Prehistoric Turtlesaurus",
+    "scryfallOracleId": "e00aa7d7-3c11-463d-a7f5-8d001ea5c021"
   },
   {
     "isPauperCommander": false,
@@ -82382,6 +82418,12 @@
   {
     "isPauperCommander": false,
     "legality": "Legal",
+    "name": "Ticked Off",
+    "scryfallOracleId": "91b89c21-5f35-4aa5-925b-c756ec6969b4"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
     "name": "Ticket Booth // Tunnel of Hate",
     "scryfallOracleId": "4d01b62b-b924-4da5-8ff5-b2f29d7f19b2"
   },
@@ -84118,6 +84160,12 @@
     "legality": "Legal",
     "name": "Tribute to the Wild",
     "scryfallOracleId": "ba0fc2ca-7084-454a-9d4e-5cbca945a7ca"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Triceraton Regenta",
+    "scryfallOracleId": "2650d2d5-576e-4b9a-95ac-0f5307f1580f"
   },
   {
     "isPauperCommander": false,
@@ -86146,6 +86194,12 @@
     "legality": "Legal",
     "name": "Utopia Vow",
     "scryfallOracleId": "917652c7-ac12-4cd7-ab2d-f2260a620d02"
+  },
+  {
+    "isPauperCommander": false,
+    "legality": "Legal",
+    "name": "Utrom Monitor",
+    "scryfallOracleId": "976e1fe6-ac32-4ea9-9828-acd3c4791e01"
   },
   {
     "isPauperCommander": false,
