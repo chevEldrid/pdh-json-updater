@@ -21,7 +21,7 @@ jobs:
           path: ~/.local
           key: local-pypoetry
       - name: Install pypoetry
-        uses: snok/install-poetry@v1.4.1
+        uses: snok/install-poetry@v1.4.2
         with:
           version: 1.8.4
           virtualenvs-path: ~/.local/opt/virtualenvs
